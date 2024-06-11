@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<GeneDef>
-		<defName>MaleGene</defName>
+		<defName>AlwaysMale</defName>
 		<label>always male</label>
 		<labelShortAdj>male</labelShortAdj>
 		<description>Carriers of this gene are always male.</description>
 		<iconPath>UI/Icons/Genes/male</iconPath>
 		<displayCategory>Reproduction</displayCategory>
-		<biostatMet>-1</biostatMet>
 		<exclusionTags>
 			 <li>genderoverride</li>
 		</exclusionTags>
@@ -23,13 +22,12 @@
 		</modExtensions>
 	</GeneDef>
 	<GeneDef>
-		<defName>FemaleGene</defName>
+		<defName>AlwaysFemale</defName>
 		<label>always female</label>
 		<labelShortAdj>female</labelShortAdj>
 		<description>Carriers of this gene are always female.</description>
 		<iconPath>UI/Icons/Genes/female</iconPath>
 		<displayCategory>Reproduction</displayCategory>
-		<biostatMet>-1</biostatMet>
 		<exclusionTags>
 			<li>genderoverride</li>
 		</exclusionTags>
