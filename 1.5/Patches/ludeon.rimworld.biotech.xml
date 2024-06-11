@@ -1,0 +1,31 @@
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/GeneDef[defName="Ears_Pig" or
+					defName="Ears_Cat" or
+					defName="Ears_Floppy" or
+					defName="Nose_Pig" or
+					defName="Hands_Pig" or
+					defName="VoicePig" or
+					defName="VoiceRoar" or
+					defName="Tail_Smooth"]</xpath>
+				<value>
+					<statOffsets>
+						<TameAnimalChance>.05</TameAnimalChance>
+						<TrainAnimalChance>.05</TrainAnimalChance>
+						<BondAnimalChanceFactor>.05</BondAnimalChanceFactor>
+					</statOffsets>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/GeneDef[defName="Tail_Furry"]/statOffsets</xpath>
+				<value>
+					<TameAnimalChance>.05</TameAnimalChance>
+					<TrainAnimalChance>.05</TrainAnimalChance>
+					<BondAnimalChanceFactor>.05</BondAnimalChanceFactor>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>
