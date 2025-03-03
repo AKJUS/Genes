@@ -7,7 +7,7 @@
 			<success>Always</success>
 			<operations>
 				<li Class="PatchOperationReplace">
-					<xpath>/Defs/GeneDef[defName="Eyes_Violet"]/renderNodeProperties</xpath>
+					<xpath>//GeneDef[defName="Eyes_Violet"]/renderNodeProperties</xpath>
 					<value>
 						<renderNodeProperties>
 							<li Class="PawnRenderNodeProperties_Eye">
@@ -28,7 +28,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>/Defs/GeneDef[defName="Eyes_Blue"]/renderNodeProperties</xpath>
+					<xpath>//GeneDef[defName="Eyes_Blue"]/renderNodeProperties</xpath>
 					<value>
 						<renderNodeProperties>
 							<li Class="PawnRenderNodeProperties_Eye">
@@ -49,7 +49,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>/Defs/GeneDef[defName="Eyes_Green"]/renderNodeProperties</xpath>
+					<xpath>//GeneDef[defName="Eyes_Green"]/renderNodeProperties</xpath>
 					<value>
 						<renderNodeProperties>
 							<li Class="PawnRenderNodeProperties_Eye">
