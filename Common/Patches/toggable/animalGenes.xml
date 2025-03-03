@@ -1,0 +1,53 @@
+<Patch>
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>True</enabled>
+		<label>animal genes slightly buff tame/train</label>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/GeneDef[defName="Ears_Pig" or defName="Ears_Cat" or defName="Ears_Floppy" or defName="Nose_Pig" or defName="Hands_Pig" or defName="VoicePig" or defName="VoiceRoar" or defName="Tail_Smooth"]</xpath>
+				<value>
+					<statOffsets>
+						<TameAnimalChance>.05</TameAnimalChance>
+						<TrainAnimalChance>.05</TrainAnimalChance>
+						<BondAnimalChanceFactor>.05</BondAnimalChanceFactor>
+					</statOffsets>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/GeneDef[defName="Tail_Furry"]/statOffsets</xpath>
+				<value>
+					<TameAnimalChance>.05</TameAnimalChance>
+					<TrainAnimalChance>.05</TrainAnimalChance>
+					<BondAnimalChanceFactor>.05</BondAnimalChanceFactor>
+				</value>
+			</li>
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>AFU Cosmetic Gene Expanded</li>
+				</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationAdd">
+							<xpath>Defs/GeneDef[defName="AFU_HA_LongHairRabbitEar" or defName="AFU_HA_ShortHairRabbitEar" or defName="AFU_HA_LoverlyRabbitEar" or defName="AFU_HA_DeerEar" or defName="AFU_HA_LovelyDeerEar" or defName="AFU_HA_LoverlyCatEar" or defName="AFU_HA_CatEar" or defName="AFU_HA_LeopardCatEar" or defName="AFU_HA_ShortHairFoxEar" or defName="AFU_HA_FoxEar" or defName="AFU_HA_RatEar" or defName="AFU_HA_DwarfRabbitEar" or defName="AFU_BA_RabbitTail" or defName="AFU_BA_LovelyRabbitTail" or defName="AFU_BA_DeerTail" or defName="AFU_BA_LovelyCatTail" or defName="AFU_BA_FoxTail" or defName="AFU_BA_SpikedLizardTail" or defName="AFU_BA_SnakeTail" or defName="AFU_BA_PigTail" or defName="AFU_BA_NineTailedFox" or defName="AFU_BA_RatTail" or defName="AFU_BA_LionTail"]</xpath>
+							<value>
+								<statOffsets>
+									<TameAnimalChance>.05</TameAnimalChance>
+									<TrainAnimalChance>.05</TrainAnimalChance>
+									<BondAnimalChanceFactor>.05</BondAnimalChanceFactor>
+								</statOffsets>
+							</value>
+						</li>
+						<li Class="PatchOperationAdd">
+							<xpath>Defs/GeneDef[defName="AFU_BA_SmoothLizardTail" or defName="AFU_BA_FluffyFoxTail"]/statOffsets</xpath>
+							<value>
+								<TameAnimalChance>.05</TameAnimalChance>
+								<TrainAnimalChance>.05</TrainAnimalChance>
+								<BondAnimalChanceFactor>.05</BondAnimalChanceFactor>
+							</value>
+						</li>
+					</operations>
+				</match>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

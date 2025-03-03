@@ -1,0 +1,47 @@
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<!--Remove vanilla icon from Red and Gray eyes-->
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/GeneDef[defName="Eyes_Red" or defName="Eyes_Gray"]/iconPath</xpath>
+			</li>
+			<!--Move eyes to their own category-->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/GeneDef[@Name="GeneEyeColor"]/displayCategory</xpath>
+				<value>
+					<displayCategory>GeneEyeColor</displayCategory>
+				</value>
+			</li>
+			<!--Give every eye gene the same icon-->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/GeneDef[@Name="GeneEyeColor"]</xpath>
+				<value>
+					<iconPath>UI/Icons/Genes/geneEyeBase</iconPath>
+				</value>
+			</li>
+			<!--Move Gray eye color-->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/GeneDef[defName="Eyes_Gray"]/displayOrderInCategory</xpath>
+				<value>
+					<displayOrderInCategory>30</displayOrderInCategory>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Pawns Retextured</li>
+		</mods>
+		<nomatch Class="PatchOperationSequence">
+			<operations>
+				<!--Make eye icon red if VPR is not installed-->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/GeneDef[defName="Eyes_Red"]</xpath>
+					<value>
+						<iconColor>(173, 37, 37)</iconColor>
+					</value>
+				</li>
+			</operations>
+		</nomatch>
+	</Operation>
+</Patch>

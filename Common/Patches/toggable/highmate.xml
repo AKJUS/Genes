@@ -1,0 +1,38 @@
+<Patch>
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>True</enabled>
+		<label>rework highmate</label>
+		<operations>
+			<!--replace highmate genepool-->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/XenotypeDef[defName="Highmate"]/genes</xpath>
+				<value>
+					<genes>
+						<li>WoundHealing_Slow</li>
+						<li>PsychicAbility_Enhanced</li>
+						<li>PsychicBonding</li>
+						<li>Mood_Sanguine</li>
+						<li>ViolenceDisabled</li>
+						<li>KindInstinct</li>
+						<li>Delicate</li>
+						<li>Libido_High</li>
+						<li>Beauty_Beautiful</li>
+						<li>Hair_LongOnly</li>
+						<li>Beard_NoBeardOnly</li>
+						<li>Body_Standard</li>
+						<li>Hair_SnowWhite</li>
+						<li>Skin_Blue</li>
+						<li>Hair_Grayless</li>
+					</genes>
+				</value>
+			</li>
+			<!--make highmate genes uninheritable-->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/XenotypeDef[defName="Highmate"]</xpath>
+				<value>
+					<inheritable>false</inheritable>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

@@ -1,0 +1,29 @@
+<Patch>
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>True</enabled>
+		<label>remove yttakin</label>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/XenotypeDef/doubleXenotypeChances/Yttakin</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/FactionDef/xenotypeSet/xenotypeChances/Yttakin</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/XenotypeDef[defName="Yttakin"]</xpath>
+				<value>
+					<factionlessGenerationWeight>0</factionlessGenerationWeight>
+				</value>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/FactionDef[defName="PirateYttakin"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/RulePackDef[defName="YttakinUtility" or defName="NamerFactionPirateYttakin" or defName="NamerSettlementPirateYttakin"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/PawnKindDef[defName="Pirate_Yttakin" or defName="Scavenger_Yttakin" or defName="Drifter_Yttakin" or defName="Thrasher_Yttakin" or defName="Mercenary_Gunner_Yttakin" or defName="Mercenary_Heavy_Yttakin" or defName="Mercenary_Slasher_Yttakin" or defName="Mercenary_Sniper_Yttakin" or defName="Mercenary_Elite_Yttakin"]</xpath>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

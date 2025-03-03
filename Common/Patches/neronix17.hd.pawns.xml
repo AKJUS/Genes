@@ -1,0 +1,75 @@
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Pawns Retextured</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/GeneDef[defName="Eyes_Violet"]/renderNodeProperties</xpath>
+					<value>
+						<renderNodeProperties>
+							<li Class="PawnRenderNodeProperties_Eye">
+								<texPath>Things/Pawn/Humanlike/HeadAttachments/RecolourableEyes/Eyes_Male</texPath>
+								<texPathFemale>Things/Pawn/Humanlike/HeadAttachments/RecolourableEyes/Eyes_Female</texPathFemale>
+								<rotDrawMode>Fresh, Rotting</rotDrawMode>
+								<parentTagDef>Head</parentTagDef>
+								<drawSize>1.0</drawSize>
+								<drawData>
+									<defaultData>
+										<layer>54</layer>
+										<offset>(0, 0, 0)</offset>
+									</defaultData>
+								</drawData>
+								<color>(173, 37, 173)</color>
+							</li>
+						</renderNodeProperties>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/GeneDef[defName="Eyes_Blue"]/renderNodeProperties</xpath>
+					<value>
+						<renderNodeProperties>
+							<li Class="PawnRenderNodeProperties_Eye">
+								<texPath>Things/Pawn/Humanlike/HeadAttachments/RecolourableEyes/Eyes_Male</texPath>
+								<texPathFemale>Things/Pawn/Humanlike/HeadAttachments/RecolourableEyes/Eyes_Female</texPathFemale>
+								<rotDrawMode>Fresh, Rotting</rotDrawMode>
+								<parentTagDef>Head</parentTagDef>
+								<drawSize>1.0</drawSize>
+								<drawData>
+									<defaultData>
+										<layer>54</layer>
+										<offset>(0, 0, 0)</offset>
+									</defaultData>
+								</drawData>
+								<color>(37, 37, 173)</color>
+							</li>
+						</renderNodeProperties>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/GeneDef[defName="Eyes_Green"]/renderNodeProperties</xpath>
+					<value>
+						<renderNodeProperties>
+							<li Class="PawnRenderNodeProperties_Eye">
+								<texPath>Things/Pawn/Humanlike/HeadAttachments/RecolourableEyes/Eyes_Male</texPath>
+								<texPathFemale>Things/Pawn/Humanlike/HeadAttachments/RecolourableEyes/Eyes_Female</texPathFemale>
+								<rotDrawMode>Fresh, Rotting</rotDrawMode>
+								<parentTagDef>Head</parentTagDef>
+								<drawSize>1.0</drawSize>
+								<drawData>
+									<defaultData>
+										<layer>54</layer>
+										<offset>(0, 0, 0)</offset>
+									</defaultData>
+								</drawData>
+								<color>(37, 173, 37)</color>
+							</li>
+						</renderNodeProperties>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
