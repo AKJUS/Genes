@@ -4,25 +4,25 @@
 		<label>remove piggers</label>
 		<operations>
 			<li Class="PatchOperationRemove">
-				<xpath>Defs/XenotypeDef/doubleXenotypeChances/Pigskin</xpath>
+				<xpath>//XenotypeDef/doubleXenotypeChances/Pigskin</xpath>
 			</li>
 			<li Class="PatchOperationRemove">
 				<xpath>//xenotypeSet/xenotypeChances/Pigskin</xpath>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/XenotypeDef[defName="Pigskin"]</xpath>
+				<xpath>//XenotypeDef[defName="Pigskin"]</xpath>
 				<value>
 					<factionlessGenerationWeight>0</factionlessGenerationWeight>
 				</value>
 			</li>
 			<li Class="PatchOperationRemove">
-				<xpath>Defs/FactionDef[defName="OutlanderRoughPig"]</xpath>
+				<xpath>//FactionDef[defName="OutlanderRoughPig"]</xpath>
 			</li>
 			<li Class="PatchOperationRemove">
-				<xpath>Defs/RulePackDef[defName="NamerFactionOutlanderPig" or defName="NamerSettlementOutlanderPig"]</xpath>
+				<xpath>//RulePackDef[defName="NamerFactionOutlanderPig" or defName="NamerSettlementOutlanderPig"]</xpath>
 			</li>
 			<li Class="PatchOperationRemove">
-				<xpath>Defs/PawnKindDef[defName="Villager_Pig" or defName="Villager_Child_Pig" or defName="Town_Guard_Pig" or defName="Town_Councilman_Pig" or defName="Town_Trader_Pig" or defName="Mercenary_Gunner_Pig" or defName="Mercenary_Elite_Pig"]</xpath>
+				<xpath>//PawnKindDef[defName="Villager_Pig" or defName="Villager_Child_Pig" or defName="Town_Guard_Pig" or defName="Town_Councilman_Pig" or defName="Town_Trader_Pig" or defName="Mercenary_Gunner_Pig" or defName="Mercenary_Elite_Pig"]</xpath>
 			</li>
 		</operations>
 	</Operation>

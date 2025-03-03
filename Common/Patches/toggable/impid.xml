@@ -5,7 +5,7 @@
 		<operations>
 			<!--replace impid genepool-->
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/XenotypeDef[defName="Impid"]/genes</xpath>
+				<xpath>//XenotypeDef[defName="Impid"]/genes</xpath>
 				<value>
 					<genes>
 						<li>PsychicAbility_Deaf</li>
@@ -26,7 +26,7 @@
 			</li>
 			<!--lower impid combat power to reflect changes-->
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/XenotypeDef[defName="Impid"]/combatPowerFactor</xpath>
+				<xpath>//XenotypeDef[defName="Impid"]/combatPowerFactor</xpath>
 				<value>
 					<combatPowerFactor>1</combatPowerFactor>
 				</value>
@@ -69,7 +69,7 @@
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/XenotypeDef[defName="Impid"]</xpath>
+				<xpath>//XenotypeDef[defName="Impid"]</xpath>
 				<value>
 					<doubleXenotypeChances>
 						<GreaterImpid>0.02</GreaterImpid>
@@ -78,31 +78,18 @@
 			</li>
 			<!--reduce commonality of impid settlements-->
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/FactionDef[defName="TribeSavageImpid"]</xpath>
+				<xpath>//FactionDef[defName="TribeSavageImpid"]</xpath>
 				<value>
 					<settlementGenerationWeight Inherit="False">0.8</settlementGenerationWeight>
 				</value>
 			</li>
 			<!--remove impids from Waster faction-->
 			<li Class="PatchOperationRemove">
-				<xpath>Defs/FactionDef[defName="PirateWaster"]/xenotypeSet/xenotypeChances/Impid</xpath>
+				<xpath>//FactionDef[defName="PirateWaster"]/xenotypeSet/xenotypeChances/Impid</xpath>
 			</li>
 			<!--remove impid earliest raid date since they're not OP anymore-->
 			<li Class="PatchOperationRemove">
-				<xpath>Defs/FactionDef[defName="TribeSavageImpid"]/earliestRaidDays</xpath>
-			</li>
-			<!--limits impids to desert biomes-->
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/FactionDef[defName="TribeSavageImpid"]/modExtensions</xpath>
-				<value>
-					<li Class="VFECore.FactionDefExtension">
-						<allowedBiomes>
-							<li>AridShrubland</li>
-							<li>Desert</li>
-							<li>ExtremeDesert</li>
-						</allowedBiomes>
-					</li>
-				</value>
+				<xpath>//FactionDef[defName="TribeSavageImpid"]/earliestRaidDays</xpath>
 			</li>
 		</operations>
 	</Operation>

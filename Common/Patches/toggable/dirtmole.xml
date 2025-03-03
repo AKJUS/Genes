@@ -4,13 +4,13 @@
 		<label>remove dirtmoles</label>
 		<operations>
 			<li Class="PatchOperationRemove">
-				<xpath>Defs/XenotypeDef/doubleXenotypeChances/Dirtmole</xpath>
+				<xpath>//XenotypeDef/doubleXenotypeChances/Dirtmole</xpath>
 			</li>
 			<li Class="PatchOperationRemove">
 				<xpath>//xenotypeSet/xenotypeChances/Dirtmole</xpath>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/XenotypeDef[defName="Dirtmole"]</xpath>
+				<xpath>//XenotypeDef[defName="Dirtmole"]</xpath>
 				<value>
 					<factionlessGenerationWeight>0</factionlessGenerationWeight>
 				</value>

@@ -7,7 +7,7 @@
 				<xpath>//xenotypeSet/xenotypeChances/Genie</xpath>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/XenotypeDef[defName="Genie"]</xpath>
+				<xpath>//XenotypeDef[defName="Genie"]</xpath>
 				<value>
 					<factionlessGenerationWeight>0</factionlessGenerationWeight>
 				</value>

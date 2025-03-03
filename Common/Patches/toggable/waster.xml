@@ -5,7 +5,7 @@
 		<operations>
 			<!--replace waster genepool-->
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/XenotypeDef[defName="Waster"]/genes</xpath>
+				<xpath>//XenotypeDef[defName="Waster"]/genes</xpath>
 				<value>
 					<genes>
 						<li>PsychicAbility_Deaf</li>
@@ -26,7 +26,7 @@
 			</li>
 			<!--make piratewaster a waster-only faction-->
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/FactionDef[defName="PirateWaster"]/xenotypeSet/xenotypeChances/Waster</xpath>
+				<xpath>//FactionDef[defName="PirateWaster"]/xenotypeSet/xenotypeChances/Waster</xpath>
 				<value>
 					<Waster>1</Waster>
 				</value>

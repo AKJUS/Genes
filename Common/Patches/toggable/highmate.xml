@@ -5,7 +5,7 @@
 		<operations>
 			<!--replace highmate genepool-->
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/XenotypeDef[defName="Highmate"]/genes</xpath>
+				<xpath>//XenotypeDef[defName="Highmate"]/genes</xpath>
 				<value>
 					<genes>
 						<li>WoundHealing_Slow</li>
@@ -28,7 +28,7 @@
 			</li>
 			<!--make highmate genes uninheritable-->
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/XenotypeDef[defName="Highmate"]</xpath>
+				<xpath>//XenotypeDef[defName="Highmate"]</xpath>
 				<value>
 					<inheritable>false</inheritable>
 				</value>

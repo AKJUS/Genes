@@ -4,7 +4,7 @@
 		<label>sanguophage have red eyes</label>
 		<operations>
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/XenotypeDef[defName="Sanguophage"]/genes</xpath>
+				<xpath>//XenotypeDef[defName="Sanguophage"]/genes</xpath>
 				<value>
 					<li>Eyes_Red</li>
 				</value>

@@ -4,19 +4,19 @@
 		<label>remove neanderthal</label>
 		<operations>
 			<li Class="PatchOperationRemove">
-				<xpath>Defs/XenotypeDef/doubleXenotypeChances/Neanderthal</xpath>
+				<xpath>//XenotypeDef/doubleXenotypeChances/Neanderthal</xpath>
 			</li>
 			<li Class="PatchOperationRemove">
 				<xpath>//xenotypeSet/xenotypeChances/Neanderthal</xpath>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/XenotypeDef[defName="Neanderthal"]</xpath>
+				<xpath>//XenotypeDef[defName="Neanderthal"]</xpath>
 				<value>
 					<factionlessGenerationWeight>0</factionlessGenerationWeight>
 				</value>
 			</li>
 			<li Class="PatchOperationRemove">
-				<xpath>Defs/FactionDef[defName="TribeRoughNeanderthal"]</xpath>
+				<xpath>//FactionDef[defName="TribeRoughNeanderthal"]</xpath>
 			</li>
 		</operations>
 	</Operation>
