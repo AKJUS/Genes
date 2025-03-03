@@ -7,7 +7,7 @@
 				<xpath>Defs/XenotypeDef/doubleXenotypeChances/Pigskin</xpath>
 			</li>
 			<li Class="PatchOperationRemove">
-				<xpath>Defs/FactionDef/xenotypeSet/xenotypeChances/Pigskin</xpath>
+				<xpath>//xenotypeSet/xenotypeChances/Pigskin</xpath>
 			</li>
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/XenotypeDef[defName="Pigskin"]</xpath>

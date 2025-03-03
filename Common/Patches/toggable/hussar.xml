@@ -4,10 +4,7 @@
 		<label>remove hussar</label>
 		<operations>
 			<li Class="PatchOperationRemove">
-				<xpath>Defs/FactionDef/xenotypeSet/xenotypeChances/Hussar</xpath>
-			</li>
-			<li Class="PatchOperationRemove">
-				<xpath>Defs/PawnKindDef/xenotypeSet/xenotypeChances/Hussar</xpath>
+				<xpath>//xenotypeSet/xenotypeChances/Hussar</xpath>
 			</li>
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/XenotypeDef[defName="Hussar"]</xpath>

@@ -1,0 +1,11 @@
+<Patch>
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>True</enabled>
+		<label>remove genetic aptitudes</label>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/GeneTemplateDef[@ParentName="GeneAptitudeBase"] | //genes/li[contains(., 'Aptitude')]</xpath>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

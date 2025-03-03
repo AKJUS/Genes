@@ -93,17 +93,15 @@
 			</li>
 			<!--limits impids to desert biomes-->
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/FactionDef[defName="TribeSavageImpid"]</xpath>
+				<xpath>Defs/FactionDef[defName="TribeSavageImpid"]/modExtensions</xpath>
 				<value>
-					<modExtensions>
-						<li Class="VFECore.FactionDefExtension">
-							<allowedBiomes>
-								<li>AridShrubland</li>
-								<li>Desert</li>
-								<li>ExtremeDesert</li>
-							</allowedBiomes>
-						</li>
-					</modExtensions>
+					<li Class="VFECore.FactionDefExtension">
+						<allowedBiomes>
+							<li>AridShrubland</li>
+							<li>Desert</li>
+							<li>ExtremeDesert</li>
+						</allowedBiomes>
+					</li>
 				</value>
 			</li>
 		</operations>

@@ -4,10 +4,7 @@
 		<label>remove genie</label>
 		<operations>
 			<li Class="PatchOperationRemove">
-				<xpath>Defs/FactionDef/xenotypeSet/xenotypeChances/Genie</xpath>
-			</li>
-			<li Class="PatchOperationRemove">
-				<xpath>Defs/PawnKindDef/xenotypeSet/xenotypeChances/Genie</xpath>
+				<xpath>//xenotypeSet/xenotypeChances/Genie</xpath>
 			</li>
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/XenotypeDef[defName="Genie"]</xpath>
