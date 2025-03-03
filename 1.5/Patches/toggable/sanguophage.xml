@@ -1,0 +1,14 @@
+<Patch>
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>True</enabled>
+		<label>sanguophage have red eyes</label>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/XenotypeDef[defName="Sanguophage"]/genes</xpath>
+				<value>
+					<li>Eyes_Red</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

@@ -1,23 +1,26 @@
 <Patch>
 	<Operation Class="PatchOperationSequence">
 		<operations>
-			<li Class="PatchOperationRemove"> <!--Remove vanilla icon from Red and Gray eyes-->
-				<xpath>Defs/GeneDef[defName="Eyes_Red" or
-				defName="Eyes_Gray"]/iconPath</xpath>
+			<!--Remove vanilla icon from Red and Gray eyes-->
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/GeneDef[defName="Eyes_Red" or defName="Eyes_Gray"]/iconPath</xpath>
 			</li>
-			<li Class="PatchOperationReplace"> <!--Move eyes to their own category-->
+			<!--Move eyes to their own category-->
+			<li Class="PatchOperationReplace">
 				<xpath>Defs/GeneDef[@Name="GeneEyeColor"]/displayCategory</xpath>
 				<value>
 					<displayCategory>GeneEyeColor</displayCategory>
 				</value>
 			</li>
-			<li Class="PatchOperationAdd"> <!--Give every eye gene the same icon-->
+			<!--Give every eye gene the same icon-->
+			<li Class="PatchOperationAdd">
 				<xpath>Defs/GeneDef[@Name="GeneEyeColor"]</xpath>
 				<value>
 					<iconPath>UI/Icons/Genes/GeneEyeBase</iconPath>
 				</value>
 			</li>
-			<li Class="PatchOperationReplace"> <!--Move Gray eye color-->
+			<!--Move Gray eye color-->
+			<li Class="PatchOperationReplace">
 				<xpath>Defs/GeneDef[defName="Eyes_Gray"]/displayOrderInCategory</xpath>
 				<value>
 					<displayOrderInCategory>30</displayOrderInCategory>
@@ -31,12 +34,13 @@
 		</mods>
 		<nomatch Class="PatchOperationSequence">
 			<operations>
-			<li Class="PatchOperationAdd"> <!--Make eye icon red if VPR is not installed-->
-				<xpath>Defs/GeneDef[defName="Eyes_Red"]</xpath>
-				<value>
-					<iconColor>(173, 37, 37)</iconColor>
-				</value>
-			</li>
+				<!--Make eye icon red if VPR is not installed-->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/GeneDef[defName="Eyes_Red"]</xpath>
+					<value>
+						<iconColor>(173, 37, 37)</iconColor>
+					</value>
+				</li>
 			</operations>
 		</nomatch>
 	</Operation>

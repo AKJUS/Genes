@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<ModMetaData>
+﻿<ModMetaData>
 	<packageId>boomer.genes</packageId>
 	<name>gene expansion</name>
 	<author>boomer</author>
@@ -26,6 +25,7 @@
 		<li>boomer.patches</li>
 		<li>oskarpotocki.vanillafactionsexpanded.core</li>
 		<li>jintuzilamian.gene.xenocosmetic</li>
+		<li>vanillaracesexpanded.phytokin</li>
 	</loadAfter>
 	<incompatibleWith />
 </ModMetaData>

@@ -1,0 +1,19 @@
+<Patch>
+	<!--replace all instances of VE female only gender gene with mine-->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/GeneDef[defName="VRE_Female"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/XenotypeDef/genes/li[text()="VRE_Female"]</xpath>
+			<value>
+				<li>AlwaysFemale</li>
+			</value>
+		</match>
+	</Operation>
+	<!--remove VE female only gender-->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/GeneDef[defName="VRE_Female"]</xpath>
+		<match Class="PatchOperationRemove">
+			<xpath>Defs/GeneDef[defName="VRE_Female"]</xpath>
+		</match>
+	</Operation>
+</Patch>
