@@ -5,7 +5,7 @@ Scope of this mod:
 - Add new genes to be used by my xenotype mods
 - Rebalance existing xenotypes
 
-Xenotypes added by other modders should be debloated/rebalanced by [fried rice](https://github.com/boomersama/boomer.patches) so any additional changes can be built upon by this mod.
+Xenotypes added by other modders should be debloated/rebalanced by [fried rice](https://github.com/friedriceworld/fried-rice) so any additional changes can be built upon by this mod.
 
 ## Additions
 - Additional eye colors (currently violet, blue, and green)

@@ -1,5 +1,5 @@
 ﻿<ModMetaData>
-	<packageId>boomer.genes</packageId>
+	<packageId>friedrice.genes</packageId>
 	<name>gene expansion</name>
 	<author>boomer</author>
 	<description>Icons stolen from another modder who took them from https://game-icons.net/.</description>
@@ -8,13 +8,13 @@
 	</supportedVersions>
 	<modVersion>1.5.0</modVersion>
 	<modIconPath IgnoreIfNoMatchingField="True" />
-	<url>https://github.com/boomersama/boomer.genes</url>
+	<url>https://github.com/friedriceworld/gene-expansion</url>
 	<modDependencies>
 		<li>
-			<packageId>boomer.patches</packageId>
+			<packageId>friedrice.patches</packageId>
 			<displayName>fried rice</displayName>
 			<steamWorkshopUrl />
-			<downloadUrl>https://github.com/boomersama/boomer.patches</downloadUrl>
+			<downloadUrl>https://github.com/friedriceworld/fried-rice</downloadUrl>
 		</li>
 	</modDependencies>
 	<loadBefore />
@@ -23,7 +23,7 @@
 		<li>ludeon.rimworld.ideology</li>
 		<li>ludeon.rimworld.biotech</li>
 		<li>ludeon.rimworld.anomaly</li>
-		<li>boomer.patches</li>
+		<li>friedrice.patches</li>
 		<li>oskarpotocki.vanillafactionsexpanded.core</li>
 		<li>jintuzilamian.gene.xenocosmetic</li>
 		<li>vanillaracesexpanded.phytokin</li>
