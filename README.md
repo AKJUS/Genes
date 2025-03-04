@@ -15,6 +15,8 @@ Xenotypes added by other modders should be debloated/rebalanced by [fried rice](
 - Removes dirtmole, genie, hussar, neanderthal, pigskin, and yttakin xenotypes
 - Reworks highmate, impid, and wasters
 - Gives sanguophage red eyes
+- Flatten gene complexity (disabled by default)
+- Flatten metabolic efficiency (disabled by default)
 
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
