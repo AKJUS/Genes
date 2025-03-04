@@ -1,4 +1,6 @@
 # gene expansion
+![](About/Preview.png)
+
 Scope of this mod:
 - Add new genes to be used by my xenotype mods
 - Rebalance existing xenotypes
