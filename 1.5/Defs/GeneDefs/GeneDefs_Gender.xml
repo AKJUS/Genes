@@ -4,7 +4,7 @@
 		<label>always male</label>
 		<labelShortAdj>male</labelShortAdj>
 		<description>Carriers of this gene are always male.</description>
-		<iconPath>UI/Icons/Genes/male</iconPath>
+		<iconPath>UI/Icons/Genes/Gene_MaleOnly</iconPath>
 		<displayCategory>Reproduction</displayCategory>
 		<displayOrderInCategory>9999</displayOrderInCategory>
 		<exclusionTags>
@@ -26,7 +26,7 @@
 		<label>always female</label>
 		<labelShortAdj>female</labelShortAdj>
 		<description>Carriers of this gene are always female.</description>
-		<iconPath>UI/Icons/Genes/female</iconPath>
+		<iconPath>UI/Icons/Genes/Gene_FemaleOnly</iconPath>
 		<displayCategory>Reproduction</displayCategory>
 		<displayOrderInCategory>9998</displayOrderInCategory>
 		<exclusionTags>

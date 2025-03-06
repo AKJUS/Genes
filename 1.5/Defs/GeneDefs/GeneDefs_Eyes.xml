@@ -8,8 +8,8 @@
 		<displayOrderInCategory>25</displayOrderInCategory>
 		<renderNodeProperties>
 			<li Class="PawnRenderNodeProperties_Eye">
-				<texPath>Things/Pawn/Humanlike/HeadAttachments/Eyes/Male/eyesMaleBase</texPath>
-				<texPathFemale>Things/Pawn/Humanlike/HeadAttachments/Eyes/Female/eyesFemaleBase</texPathFemale>
+				<texPath>Things/Pawn/Humanlike/HeadAttachments/Eyes/Male/Eyes_MaleBase</texPath>
+				<texPathFemale>Things/Pawn/Humanlike/HeadAttachments/Eyes/Female/Eyes_FemaleBase</texPathFemale>
 				<anchorTag>RightEye</anchorTag>
 				<rotDrawMode>Fresh, Rotting</rotDrawMode>
 				<parentTagDef>Head</parentTagDef>
@@ -24,8 +24,8 @@
 				<color>(173, 37, 173)</color>
 			</li>
 			<li Class="PawnRenderNodeProperties_Eye">
-				<texPath>Things/Pawn/Humanlike/HeadAttachments/Eyes/Male/eyesMaleBase</texPath>
-				<texPathFemale>Things/Pawn/Humanlike/HeadAttachments/Eyes/Female/eyesFemaleBase</texPathFemale>
+				<texPath>Things/Pawn/Humanlike/HeadAttachments/Eyes/Male/Eyes_MaleBase</texPath>
+				<texPathFemale>Things/Pawn/Humanlike/HeadAttachments/Eyes/Female/Eyes_FemaleBase</texPathFemale>
 				<anchorTag>LeftEye</anchorTag>
 				<rotDrawMode>Fresh, Rotting</rotDrawMode>
 				<parentTagDef>Head</parentTagDef>
@@ -54,8 +54,8 @@
 		<displayOrderInCategory>20</displayOrderInCategory>
 		<renderNodeProperties>
 			<li Class="PawnRenderNodeProperties_Eye">
-				<texPath>Things/Pawn/Humanlike/HeadAttachments/Eyes/Male/eyesMaleBase</texPath>
-				<texPathFemale>Things/Pawn/Humanlike/HeadAttachments/Eyes/Female/eyesFemaleBase</texPathFemale>
+				<texPath>Things/Pawn/Humanlike/HeadAttachments/Eyes/Male/Eyes_MaleBase</texPath>
+				<texPathFemale>Things/Pawn/Humanlike/HeadAttachments/Eyes/Female/Eyes_FemaleBase</texPathFemale>
 				<anchorTag>RightEye</anchorTag>
 				<rotDrawMode>Fresh, Rotting</rotDrawMode>
 				<parentTagDef>Head</parentTagDef>
@@ -70,8 +70,8 @@
 				<color>(37, 37, 173)</color>
 			</li>
 			<li Class="PawnRenderNodeProperties_Eye">
-				<texPath>Things/Pawn/Humanlike/HeadAttachments/Eyes/Male/eyesMaleBase</texPath>
-				<texPathFemale>Things/Pawn/Humanlike/HeadAttachments/Eyes/Female/eyesFemaleBase</texPathFemale>
+				<texPath>Things/Pawn/Humanlike/HeadAttachments/Eyes/Male/Eyes_MaleBase</texPath>
+				<texPathFemale>Things/Pawn/Humanlike/HeadAttachments/Eyes/Female/Eyes_FemaleBase</texPathFemale>
 				<anchorTag>LeftEye</anchorTag>
 				<rotDrawMode>Fresh, Rotting</rotDrawMode>
 				<parentTagDef>Head</parentTagDef>
@@ -100,8 +100,8 @@
 		<displayOrderInCategory>10</displayOrderInCategory>
 		<renderNodeProperties>
 			<li Class="PawnRenderNodeProperties_Eye">
-				<texPath>Things/Pawn/Humanlike/HeadAttachments/Eyes/Male/eyesMaleBase</texPath>
-				<texPathFemale>Things/Pawn/Humanlike/HeadAttachments/Eyes/Female/eyesFemaleBase</texPathFemale>
+				<texPath>Things/Pawn/Humanlike/HeadAttachments/Eyes/Male/Eyes_MaleBase</texPath>
+				<texPathFemale>Things/Pawn/Humanlike/HeadAttachments/Eyes/Female/Eyes_FemaleBase</texPathFemale>
 				<anchorTag>RightEye</anchorTag>
 				<rotDrawMode>Fresh, Rotting</rotDrawMode>
 				<parentTagDef>Head</parentTagDef>
@@ -116,8 +116,8 @@
 				<color>(37, 173, 37)</color>
 			</li>
 			<li Class="PawnRenderNodeProperties_Eye">
-				<texPath>Things/Pawn/Humanlike/HeadAttachments/Eyes/Male/eyesMaleBase</texPath>
-				<texPathFemale>Things/Pawn/Humanlike/HeadAttachments/Eyes/Female/eyesFemaleBase</texPathFemale>
+				<texPath>Things/Pawn/Humanlike/HeadAttachments/Eyes/Male/Eyes_MaleBase</texPath>
+				<texPathFemale>Things/Pawn/Humanlike/HeadAttachments/Eyes/Female/Eyes_FemaleBase</texPathFemale>
 				<anchorTag>LeftEye</anchorTag>
 				<rotDrawMode>Fresh, Rotting</rotDrawMode>
 				<parentTagDef>Head</parentTagDef>

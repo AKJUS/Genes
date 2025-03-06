@@ -16,7 +16,7 @@
 			<li Class="PatchOperationAdd">
 				<xpath>//GeneDef[@Name="GeneEyeColor"]</xpath>
 				<value>
-					<iconPath>UI/Icons/Genes/geneEyeBase</iconPath>
+					<iconPath>UI/Icons/Genes/Gene_EyeBase</iconPath>
 				</value>
 			</li>
 			<!--Move Gray eye color-->
