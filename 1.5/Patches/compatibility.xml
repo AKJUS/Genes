@@ -16,4 +16,21 @@
 			<xpath>//GeneDef[defName="VRE_Female"]</xpath>
 		</match>
 	</Operation>
+	<!--replace all instances of VE male only gender gene with mine-->
+	<Operation Class="PatchOperationConditional">
+		<xpath>//GeneDef[defName="VRE_Female"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>//XenotypeDef/genes/li[text()="VRE_Male"]</xpath>
+			<value>
+				<li>AlwaysFemale</li>
+			</value>
+		</match>
+	</Operation>
+	<!--remove VE male only gender-->
+	<Operation Class="PatchOperationConditional">
+		<xpath>//GeneDef[defName="VRE_Female"]</xpath>
+		<match Class="PatchOperationRemove">
+			<xpath>//GeneDef[defName="VRE_Male"]</xpath>
+		</match>
+	</Operation>
 </Patch>
