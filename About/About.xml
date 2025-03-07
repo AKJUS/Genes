@@ -13,7 +13,6 @@
 		<li>
 			<packageId>Ludeon.RimWorld.Biotech</packageId>
 			<displayName>Biotech</displayName>
-			<steamWorkshopUrl>BiotechsSteamStorePage</steamWorkshopUrl>
 		</li>
 		<li>
 			<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
