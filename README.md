@@ -34,5 +34,5 @@ Scope of this mod:
 ## Next:
 - [ ] Add full spectrum of eye colors
 
-# Legal
+## Legal
 Portions of the materials used to create this mod are trademarks and/or copyrighted works of Ludeon Studios Inc. All rights reserved by Ludeon. This mod is not official and is not endorsed by Ludeon.
