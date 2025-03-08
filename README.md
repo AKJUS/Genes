@@ -25,14 +25,11 @@ Scope of this mod:
 - Adds always male and always female genes
 - Adds taming and training buffs to animal genes
 - Removes all genetic aptitudes
-- Removes dirtmole,and wasters
+- Removes dirtmole, genie, hussar, neanderthal, pigskin, yttakin
 - Gives sanguophage red eyes
 - Flatten gene complexity (disabled by default)
 - Flatten metabolic efficiency (disabled by default),and yttakin xenotypes
-- Reworks highmate,blue,genie,hussar,impid,neanderthal,pigskin
-
-## Next:
-- [ ] Add full spectrum of eye colors
+- Reworks highmate, impid, and wasters
 
 ## Legal
 Portions of the materials used to create this mod are trademarks and/or copyrighted works of Ludeon Studios Inc. All rights reserved by Ludeon. This mod is not official and is not endorsed by Ludeon.
