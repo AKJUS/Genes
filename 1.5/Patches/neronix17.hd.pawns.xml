@@ -5,9 +5,9 @@
 		</mods>
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
-			<operations>
+			<operations><!--needs a rewrite
 				<li Class="PatchOperationReplace">
-					<xpath>//GeneDef[defName="Eyes_Violet"]/renderNodeProperties</xpath>
+					<xpath>//GeneDef[defName="CorePlus_EyesViolet"]/renderNodeProperties</xpath>
 					<value>
 						<renderNodeProperties>
 							<li Class="PawnRenderNodeProperties_Eye">
@@ -68,7 +68,7 @@
 							</li>
 						</renderNodeProperties>
 					</value>
-				</li>
+				</li>-->
 			</operations>
 		</match>
 	</Operation>

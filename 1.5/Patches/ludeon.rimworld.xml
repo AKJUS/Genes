@@ -1,6 +1,13 @@
 <Patch>
 	<Operation Class="PatchOperationSequence">
 		<operations>
+			<!--change red eye color-->
+			<li Class="PatchOperationAdd">
+				<xpath>//GeneDef[defName="Eyes_Red"]/renderNodeProperties/li</xpath>
+				<value>
+					<color>(229, 100, 100)</color>
+				</value>
+			</li>
 			<!--Remove vanilla icon from Red and Gray eyes-->
 			<li Class="PatchOperationRemove">
 				<xpath>//GeneDef[defName="Eyes_Red" or defName="Eyes_Gray"]/iconPath</xpath>
@@ -19,11 +26,17 @@
 					<iconPath>UI/Icons/Genes/Gene_EyeBase</iconPath>
 				</value>
 			</li>
-			<!--Move Gray eye color-->
+			<!--change vanilla eye color order-->
 			<li Class="PatchOperationReplace">
 				<xpath>//GeneDef[defName="Eyes_Gray"]/displayOrderInCategory</xpath>
 				<value>
-					<displayOrderInCategory>30</displayOrderInCategory>
+					<displayOrderInCategory>100</displayOrderInCategory>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>//GeneDef[defName="Eyes_Red"]/displayOrderInCategory</xpath>
+				<value>
+					<displayOrderInCategory>10</displayOrderInCategory>
 				</value>
 			</li>
 		</operations>
@@ -38,7 +51,7 @@
 				<li Class="PatchOperationAdd">
 					<xpath>//GeneDef[defName="Eyes_Red"]</xpath>
 					<value>
-						<iconColor>(173, 37, 37)</iconColor>
+						<iconColor>(229, 100, 100)</iconColor>
 					</value>
 				</li>
 			</operations>
