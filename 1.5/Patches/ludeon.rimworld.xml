@@ -2,11 +2,14 @@
 	<Operation Class="PatchOperationSequence">
 		<operations>
 			<!--change red eye color-->
-			<li Class="PatchOperationAdd">
-				<xpath>//GeneDef[defName="Eyes_Red"]/renderNodeProperties/li</xpath>
-				<value>
-					<color>(229, 100, 100)</color>
-				</value>
+			<li Class="PatchOperationConditional">
+				<xpath>//GeneDef[defName="Eyes_Red"]/renderNodeProperties/li/color</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>//GeneDef[defName="Eyes_Red"]/renderNodeProperties/li</xpath>
+					<value>
+						<color>(229, 100, 100)</color>
+					</value>
+				</nomatch>
 			</li>
 			<!--Remove vanilla icon from Red and Gray eyes-->
 			<li Class="PatchOperationRemove">
