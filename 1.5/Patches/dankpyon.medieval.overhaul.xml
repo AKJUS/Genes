@@ -1,0 +1,23 @@
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Medieval Overhaul</li>
+        </mods>
+        <!--patch medieval overhaul houses to support xenotypes-->
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationConditional">
+                    <xpath>//FactionDef[@ParentName="DankPyon_NobleHouseFactionBase"]/xenotypeSet/xenotypeChances</xpath>
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>//FactionDef[@ParentName="DankPyon_NobleHouseFactionBase"]</xpath>
+                        <value>
+                            <xenotypeSet Inherit="False">
+                                <xenotypeChances />
+                            </xenotypeSet>
+                        </value>
+                    </nomatch>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>
