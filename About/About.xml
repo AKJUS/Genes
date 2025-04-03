@@ -25,6 +25,7 @@
 	<loadAfter>
 		<li>coreplus.rebalance</li>
 		<li>coreplus.debloat</li>
+		<li>dankpyon.medieval.overhaul</li>
 		<li>jintuzilamian.gene.xenocosmetic</li>
 		<li>oskarpotocki.vanillafactionsexpanded.core</li>
 		<li>vanillaracesexpanded.phytokin</li>
