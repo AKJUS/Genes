@@ -1,36 +1,63 @@
 <Patch>
 	<!--replace all instances of VE female only gender gene with mine-->
-	<Operation Class="PatchOperationConditional">
-		<xpath>//GeneDef[defName="VRE_Female"]</xpath>
-		<match Class="PatchOperationReplace">
-			<xpath>//XenotypeDef/genes/li[text()="VRE_Female"]</xpath>
-			<value>
-				<li>AlwaysFemale</li>
-			</value>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Alpha Genes</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>//XenotypeDef/genes/li[text()="AlwaysFemale"]</xpath>
+					<value>
+						<li>AG_Female</li>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>//XenotypeDef/genes/li[text()="AlwaysMale"]</xpath>
+					<value>
+						<li>AG_Male</li>
+					</value>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>//GeneDef[defName="AlwaysFemale" or defName="AlwaysMale"]</xpath>
+				</li>
+			</operations>
 		</match>
-	</Operation>
-	<!--remove VE female only gender-->
-	<Operation Class="PatchOperationConditional">
-		<xpath>//GeneDef[defName="VRE_Female"]</xpath>
-		<match Class="PatchOperationRemove">
-			<xpath>//GeneDef[defName="VRE_Female"]</xpath>
-		</match>
-	</Operation>
-	<!--replace all instances of VE male only gender gene with mine-->
-	<Operation Class="PatchOperationConditional">
-		<xpath>//GeneDef[defName="VRE_Female"]</xpath>
-		<match Class="PatchOperationReplace">
-			<xpath>//XenotypeDef/genes/li[text()="VRE_Male"]</xpath>
-			<value>
-				<li>AlwaysFemale</li>
-			</value>
-		</match>
-	</Operation>
-	<!--remove VE male only gender-->
-	<Operation Class="PatchOperationConditional">
-		<xpath>//GeneDef[defName="VRE_Female"]</xpath>
-		<match Class="PatchOperationRemove">
-			<xpath>//GeneDef[defName="VRE_Male"]</xpath>
-		</match>
+		<nomatch Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>//GeneDef[defName="VRE_Female"]</xpath>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<li Class="PatchOperationReplace">
+								<xpath>//XenotypeDef/genes/li[text()="AlwaysFemale"]</xpath>
+								<value>
+									<li>VRE_Female</li>
+								</value>
+							</li>
+							<li Class="PatchOperationRemove">
+								<xpath>//GeneDef[defName="AlwaysFemale"]</xpath>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>//GeneDef[defName="VRE_Male"]</xpath>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<li Class="PatchOperationReplace">
+								<xpath>//XenotypeDef/genes/li[text()="AlwaysMale"]</xpath>
+								<value>
+									<li>VRE_Male</li>
+								</value>
+							</li>
+							<li Class="PatchOperationRemove">
+								<xpath>//GeneDef[defName="AlwaysMale"]</xpath>
+							</li>
+						</operations>
+					</match>
+				</li>
+			</operations>
+		</nomatch>
 	</Operation>
 </Patch>
