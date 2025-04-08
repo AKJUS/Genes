@@ -48,6 +48,33 @@
 					</operations>
 				</match>
 			</li>
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Vanilla Races Expanded - Lycanthrope</li>
+				</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationAdd">
+							<xpath>//GeneDef[defName="VRE_CanineEars" or defName="VRE_CanineNose"]</xpath>
+							<value>
+								<statOffsets>
+									<TameAnimalChance>.05</TameAnimalChance>
+									<TrainAnimalChance>.05</TrainAnimalChance>
+									<BondAnimalChanceFactor>.05</BondAnimalChanceFactor>
+								</statOffsets>
+							</value>
+						</li>
+						<li Class="PatchOperationAdd">
+							<xpath>//GeneDef[defName="VRE_CanineTail"]/statOffsets</xpath>
+							<value>
+								<TameAnimalChance>.05</TameAnimalChance>
+								<TrainAnimalChance>.05</TrainAnimalChance>
+								<BondAnimalChanceFactor>.05</BondAnimalChanceFactor>
+							</value>
+						</li>
+					</operations>
+				</match>
+			</li>
 		</operations>
 	</Operation>
 </Patch>

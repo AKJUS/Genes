@@ -12,6 +12,16 @@
                         <li>CorePlus_Gender</li>
                     </value>
                 </li>
+                <li Class="PatchOperationConditional">
+                    <xpath>//GeneDef[@Name="AFU_BodyAttachmentGeneBase"]</xpath>
+                    <match Class="PatchOperationAdd">
+                        <xpath>//*[name()="VREAndroids.AndroidConvertableGenesDef"][defName="VREA_AndroidConvertableGenes"]/geneCategories</xpath>
+                        <value>
+                            <li>AFU_BodyAttachment</li>
+                            <li>AFU_HeadAttachment</li>
+                        </value>
+                    </match>
+                </li>
             </operations>
         </match>
     </Operation>

@@ -27,6 +27,50 @@
 						<displayCategory>CorePlus_Gender</displayCategory>
 					</value>
 				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>//GeneDef[defName="AG_Female"]/forcedHeadTypes</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>//GeneDef[defName="AG_Female"]/forcedHeadTypes</xpath>
+						<value>
+							<forcedHeadTypes>
+								<li>Female_AverageNormal</li>
+								<li>Female_AveragePointy</li>
+							</forcedHeadTypes>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>//GeneDef[defName="AG_Female"]</xpath>
+						<value>
+							<forcedHeadTypes>
+								<li>Female_AverageNormal</li>
+								<li>Female_AveragePointy</li>
+							</forcedHeadTypes>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>//GeneDef[defName="AG_Male"]/forcedHeadTypes</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>//GeneDef[defName="AG_Male"]/forcedHeadTypes</xpath>
+						<value>
+							<forcedHeadTypes>
+								<li>Male_AverageNormal</li>
+								<li>Male_AveragePointy</li>
+								<li>Male_AverageWide</li>
+							</forcedHeadTypes>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>//GeneDef[defName="AG_Male"]</xpath>
+						<value>
+							<forcedHeadTypes>
+								<li>Male_AverageNormal</li>
+								<li>Male_AveragePointy</li>
+								<li>Male_AverageWide</li>
+							</forcedHeadTypes>
+						</value>
+					</nomatch>
+				</li>
 			</operations>
 		</match>
 		<nomatch Class="PatchOperationSequence">
@@ -48,6 +92,15 @@
 								<xpath>//GeneDef[defName="VRE_Female"]/displayCategory</xpath>
 								<value>
 									<displayCategory>CorePlus_Gender</displayCategory>
+								</value>
+							</li>
+							<li Class="PatchOperationAdd">
+								<xpath>//GeneDef[defName="VRE_Female"]</xpath>
+								<value>
+									<forcedHeadTypes>
+										<li>Female_AverageNormal</li>
+										<li>Female_AveragePointy</li>
+									</forcedHeadTypes>
 								</value>
 							</li>
 						</operations>
@@ -72,10 +125,42 @@
 									<displayCategory>CorePlus_Gender</displayCategory>
 								</value>
 							</li>
+							<li Class="PatchOperationAdd">
+								<xpath>//GeneDef[defName="VRE_Male"]</xpath>
+								<value>
+									<forcedHeadTypes>
+										<li>Male_AverageNormal</li>
+										<li>Male_AveragePointy</li>
+										<li>Male_AverageWide</li>
+									</forcedHeadTypes>
+								</value>
+							</li>
 						</operations>
 					</match>
 				</li>
 			</operations>
 		</nomatch>
+	</Operation>
+	<!--move tail genes from misc to cosmetic tab-->
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<!--moving Nose_Pig individually because it overrides its parent category to misc for some reason-->
+			<li Class="PatchOperationReplace">
+				<xpath>//GeneDef[@Name="GeneTailBase" or defName="Nose_Pig"]/displayCategory</xpath>
+				<value>
+					<displayCategory>Cosmetic</displayCategory>
+				</value>
+			</li>
+			<!--great minds think alike-->
+			<li Class="PatchOperationConditional">
+				<xpath>//GeneDef[defName="VRE_CanineNose"]</xpath>
+				<match Class="PatchOperationReplace">
+					<xpath>//GeneDef[defName="VRE_CanineNose"]/displayCategory</xpath>
+					<value>
+						<displayCategory>Cosmetic</displayCategory>
+					</value>
+				</match>
+			</li>
+		</operations>
 	</Operation>
 </Patch>
