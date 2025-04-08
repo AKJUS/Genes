@@ -1,0 +1,18 @@
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Races Expanded - Android</li>
+        </mods>
+        <!--add gender category to androids-->
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>//*[name()="VREAndroids.AndroidConvertableGenesDef"][defName="VREA_AndroidConvertableGenes"]/geneCategories</xpath>
+                    <value>
+                        <li>CorePlus_Gender</li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

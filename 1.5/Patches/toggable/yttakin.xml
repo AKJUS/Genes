@@ -1,6 +1,6 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>True</enabled>
+		<enabled>False</enabled>
 		<label>remove yttakin</label>
 		<operations>
 			<li Class="PatchOperationRemove">

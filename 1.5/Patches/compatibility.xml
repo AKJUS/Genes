@@ -7,19 +7,25 @@
 		<match Class="PatchOperationSequence">
 			<operations>
 				<li Class="PatchOperationReplace">
-					<xpath>//XenotypeDef/genes/li[text()="AlwaysFemale"]</xpath>
+					<xpath>//XenotypeDef/genes/li[text()="CorePlus_AlwaysFemale"]</xpath>
 					<value>
 						<li>AG_Female</li>
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>//XenotypeDef/genes/li[text()="AlwaysMale"]</xpath>
+					<xpath>//XenotypeDef/genes/li[text()="CorePlus_AlwaysMale"]</xpath>
 					<value>
 						<li>AG_Male</li>
 					</value>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>//GeneDef[defName="AlwaysFemale" or defName="AlwaysMale"]</xpath>
+					<xpath>//GeneDef[defName="CorePlus_AlwaysFemale" or defName="CorePlus_AlwaysMale"]</xpath>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>//GeneDef[defName="AG_Female" or defName="AG_Male"]/displayCategory</xpath>
+					<value>
+						<displayCategory>CorePlus_Gender</displayCategory>
+					</value>
 				</li>
 			</operations>
 		</match>
@@ -30,13 +36,19 @@
 					<match Class="PatchOperationSequence">
 						<operations>
 							<li Class="PatchOperationReplace">
-								<xpath>//XenotypeDef/genes/li[text()="AlwaysFemale"]</xpath>
+								<xpath>//XenotypeDef/genes/li[text()="CorePlus_AlwaysFemale"]</xpath>
 								<value>
 									<li>VRE_Female</li>
 								</value>
 							</li>
 							<li Class="PatchOperationRemove">
-								<xpath>//GeneDef[defName="AlwaysFemale"]</xpath>
+								<xpath>//GeneDef[defName="CorePlus_AlwaysFemale"]</xpath>
+							</li>
+							<li Class="PatchOperationReplace">
+								<xpath>//GeneDef[defName="VRE_Female"]/displayCategory</xpath>
+								<value>
+									<displayCategory>CorePlus_Gender</displayCategory>
+								</value>
 							</li>
 						</operations>
 					</match>
@@ -46,13 +58,19 @@
 					<match Class="PatchOperationSequence">
 						<operations>
 							<li Class="PatchOperationReplace">
-								<xpath>//XenotypeDef/genes/li[text()="AlwaysMale"]</xpath>
+								<xpath>//XenotypeDef/genes/li[text()="CorePlus_AlwaysMale"]</xpath>
 								<value>
 									<li>VRE_Male</li>
 								</value>
 							</li>
 							<li Class="PatchOperationRemove">
-								<xpath>//GeneDef[defName="AlwaysMale"]</xpath>
+								<xpath>//GeneDef[defName="CorePlus_AlwaysMale"]</xpath>
+							</li>
+							<li Class="PatchOperationReplace">
+								<xpath>//GeneDef[defName="VRE_Male"]/displayCategory</xpath>
+								<value>
+									<displayCategory>CorePlus_Gender</displayCategory>
+								</value>
 							</li>
 						</operations>
 					</match>

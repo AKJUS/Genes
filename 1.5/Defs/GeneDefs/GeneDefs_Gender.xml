@@ -1,11 +1,11 @@
 <Defs>
 	<GeneDef>
-		<defName>AlwaysMale</defName>
+		<defName>CorePlus_AlwaysMale</defName>
 		<label>always male</label>
 		<labelShortAdj>male</labelShortAdj>
 		<description>Carriers of this gene are always male.</description>
 		<iconPath>UI/Icons/Genes/Gene_MaleOnly</iconPath>
-		<displayCategory>Reproduction</displayCategory>
+		<displayCategory>CorePlus_Gender</displayCategory>
 		<displayOrderInCategory>9999</displayOrderInCategory>
 		<exclusionTags>
 			 <li>genderoverride</li>
@@ -22,12 +22,12 @@
 		</modExtensions>
 	</GeneDef>
 	<GeneDef>
-		<defName>AlwaysFemale</defName>
+		<defName>CorePlus_AlwaysFemale</defName>
 		<label>always female</label>
 		<labelShortAdj>female</labelShortAdj>
 		<description>Carriers of this gene are always female.</description>
 		<iconPath>UI/Icons/Genes/Gene_FemaleOnly</iconPath>
-		<displayCategory>Reproduction</displayCategory>
+		<displayCategory>CorePlus_Gender</displayCategory>
 		<displayOrderInCategory>9998</displayOrderInCategory>
 		<exclusionTags>
 			<li>genderoverride</li>
