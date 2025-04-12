@@ -1,0 +1,7 @@
+<loadFolders>
+    <v1.5>
+        <li>/</li>
+        <li>1.5</li>
+        <li IfModActive="vanillaracesexpanded.phytokin">Mods/Vanilla Races Expanded - Phytokin/1.5</li>
+    </v1.5>
+</loadFolders>

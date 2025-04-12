@@ -8,6 +8,7 @@
 				<xpath>//XenotypeDef[defName="Impid"]/genes</xpath>
 				<value>
 					<genes>
+						<li MayRequire="jintuzilamian.gene.xenocosmetic">AFU_HA_SpikedHorn</li>
 						<li>PsychicAbility_Deaf</li>
 						<li>Mood_Pessimist</li>
 						<li>MaxTemp_LargeIncrease</li>
@@ -47,6 +48,7 @@
 						<chanceToUseNameMaker>1</chanceToUseNameMaker>
 						<factionlessGenerationWeight>0</factionlessGenerationWeight>
 						<genes>
+							<li MayRequire="jintuzilamian.gene.xenocosmetic">AFU_HA_DemonHorn</li>
 							<li>FireSpew</li>
 							<li>PsychicAbility_Deaf</li>
 							<li>Mood_Pessimist</li>

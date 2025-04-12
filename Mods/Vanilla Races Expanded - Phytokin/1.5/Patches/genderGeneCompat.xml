@@ -1,0 +1,15 @@
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>//XenotypeDef/genes/li[text()="VRE_Female"]</xpath>
+                <value>
+                    <li>CorePlus_AlwaysFemale</li>
+                </value>
+            </li>
+            <li Class="PatchOperationRemove">
+                <xpath>//GeneDef[defName="VRE_Female"]</xpath>
+            </li>
+        </operations>
+    </Operation>
+</Patch>
