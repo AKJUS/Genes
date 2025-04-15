@@ -6,6 +6,8 @@
 			<li Class="PatchOperationAdd">
 				<xpath>//XenotypeDef[defName="Sanguophage"]/genes</xpath>
 				<value>
+					<li MayRequire="oppey.eyegenes2">Eyes_Crimson</li>
+					<li MayRequire="oppey.eyegenes2">Eyes_DeepRed</li>
 					<li>Eyes_Red</li>
 				</value>
 			</li>
