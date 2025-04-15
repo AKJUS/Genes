@@ -1,0 +1,17 @@
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <operations>
+            <li Class="PatchOperationConditional">
+                <xpath>//FactionDef[@ParentName="DankPyon_NobleHouseFactionBase"]/xenotypeSet/xenotypeChances</xpath>
+                <nomatch Class="PatchOperationAdd">
+                    <xpath>//FactionDef[@ParentName="DankPyon_NobleHouseFactionBase"]</xpath>
+                    <value>
+                        <xenotypeSet Inherit="False">
+                            <xenotypeChances />
+                        </xenotypeSet>
+                    </value>
+                </nomatch>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

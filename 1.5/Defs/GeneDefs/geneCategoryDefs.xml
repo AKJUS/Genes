@@ -1,8 +1,0 @@
-<Defs>
-	<GeneCategoryDef>
-		<defName>CorePlus_Gender</defName>
-		<label>Gender</label>
-		<displayPriorityInXenotype>401</displayPriorityInXenotype>
-		<displayPriorityInGenepack>-101</displayPriorityInGenepack>
-	</GeneCategoryDef>
-</Defs>
