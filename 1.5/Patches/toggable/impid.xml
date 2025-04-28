@@ -27,10 +27,8 @@
 			</li>
 			<!--lower impid combat power to reflect changes-->
 			<li Class="PatchOperationReplace">
-				<xpath>//XenotypeDef[defName="Impid"]/combatPowerFactor</xpath>
-				<value>
-					<combatPowerFactor>1</combatPowerFactor>
-				</value>
+				<xpath>//XenotypeDef[defName="Impid"]/combatPowerFactor/text()</xpath>
+				<value>1</value>
 			</li>
 			<!--add greater impids-->
 			<li Class="PatchOperationAdd">
@@ -74,7 +72,7 @@
 				<xpath>//XenotypeDef[defName="Impid"]</xpath>
 				<value>
 					<doubleXenotypeChances>
-						<GreaterImpid>0.02</GreaterImpid>
+						<GreaterImpid>0.05</GreaterImpid>
 					</doubleXenotypeChances>
 				</value>
 			</li>
