@@ -2,7 +2,7 @@
     <v1.5>
         <li>/</li>
         <li>1.5</li>
-        <li IfModActive="jintuzilamian.gene.xenocosmetic,erin.shisune">Mods/Erin's Shisune/AFU Cosmetic Gene Expanded/1.5</li>
+        <li IfModActive="erin.shisune">Mods/Erin's Shisune/AFU Cosmetic Gene Expanded/1.5</li>
         <li IfModActive="dankpyon.medieval.overhaul">Mods/Medieval Overhaul/1.5</li>
         <li IfModActive="vanillaracesexpanded.android">Mods/Vanilla Races Expanded - Android/1.5</li>
         <li IfModActive="vanillaracesexpanded.phytokin">Mods/Vanilla Races Expanded - Phytokin/1.5</li>

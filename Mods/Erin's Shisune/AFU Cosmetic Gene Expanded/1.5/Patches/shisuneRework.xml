@@ -1,5 +1,5 @@
 <Patch>
-    <Operation Class="VFECore.PatchOperationToggableSequence">
+    <Operation MayRequire="jintuzilamian.gene.xenocosmetic" Class="VFECore.PatchOperationToggableSequence">
         <enabled>True</enabled>
         <label>[Erin's Shisune] rework shisune to use AFU cosmetics</label>
         <operations>
