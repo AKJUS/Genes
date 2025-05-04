@@ -8,21 +8,21 @@
 				<xpath>//XenotypeDef[defName="Highmate"]/genes</xpath>
 				<value>
 					<genes>
-						<li>WoundHealing_Slow</li>
+						<li>Beard_NoBeardOnly</li>
+						<li>Beauty_Beautiful</li>
+						<li>Body_Standard</li>
+						<li>Delicate</li>
+						<li>Hair_Grayless</li>
+						<li>Hair_LongOnly</li>
+						<li>Hair_SnowWhite</li>
+						<li>KindInstinct</li>
+						<li>Libido_High</li>
+						<li>Mood_Sanguine</li>
 						<li>PsychicAbility_Enhanced</li>
 						<li>PsychicBonding</li>
-						<li>Mood_Sanguine</li>
-						<li>ViolenceDisabled</li>
-						<li>KindInstinct</li>
-						<li>Delicate</li>
-						<li>Libido_High</li>
-						<li>Beauty_Beautiful</li>
-						<li>Hair_LongOnly</li>
-						<li>Beard_NoBeardOnly</li>
-						<li>Body_Standard</li>
-						<li>Hair_SnowWhite</li>
 						<li>Skin_Blue</li>
-						<li>Hair_Grayless</li>
+						<li>ViolenceDisabled</li>
+						<li>WoundHealing_Slow</li>
 					</genes>
 				</value>
 			</li>

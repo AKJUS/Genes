@@ -8,20 +8,18 @@
 				<xpath>//XenotypeDef[defName="Impid"]/genes</xpath>
 				<value>
 					<genes>
-						<li MayRequire="jintuzilamian.gene.xenocosmetic">AFU_HA_SpikedHorn</li>
-						<li>PsychicAbility_Deaf</li>
-						<li>Mood_Pessimist</li>
-						<li>MaxTemp_LargeIncrease</li>
-						<li>FireResistant</li>
-						<li>Pain_Reduced</li>
 						<li>Beard_NoBeardOnly</li>
-						<li>Headbone_MiniHorns</li>
 						<li>Body_Standard</li>
-						<li>Body_Thin</li>
-						<li>Hair_SandyBlonde</li>
+						<li>FireResistant</li>
 						<li>Hair_LightOrange</li>
-						<li>Skin_Orange</li>
+						<li>Hair_SandyBlonde</li>
+						<li>Headbone_MiniHorns</li>
+						<li>MaxTemp_LargeIncrease</li>
+						<li>Mood_Depressive</li>
+						<li>Pain_Reduced</li>
+						<li>PsychicAbility_Deaf</li>
 						<li>Skin_DeepRed</li>
+						<li>Skin_Orange</li>
 					</genes>
 				</value>
 			</li>
@@ -59,7 +57,6 @@
 							<li>Headbone_MiniHorns</li>
 							<li>FacialRidges</li>
 							<li>Body_Standard</li>
-							<li>Body_Thin</li>
 							<li>Hair_SandyBlonde</li>
 							<li>Hair_LightOrange</li>
 							<li>Skin_Orange</li>
