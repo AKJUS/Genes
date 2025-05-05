@@ -27,10 +27,8 @@
 			</li>
 			<!--make piratewaster a waster-only faction-->
 			<li Class="PatchOperationReplace">
-				<xpath>//FactionDef[defName="PirateWaster"]/xenotypeSet/xenotypeChances/Waster</xpath>
-				<value>
-					<Waster>1</Waster>
-				</value>
+				<xpath>//FactionDef[defName="PirateWaster"]/xenotypeSet/xenotypeChances/Waster/text()</xpath>
+				<value>1</value>
 			</li>
 		</operations>
 	</Operation>
