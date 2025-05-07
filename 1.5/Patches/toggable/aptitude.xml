@@ -1,10 +1,53 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
 		<enabled>True</enabled>
-		<label>remove genetic aptitudes</label>
+		<label>rework genetic aptitudes</label>
 		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>//GeneTemplateDef[defName="AptitudeTerrible"]/description/text()</xpath>
+				<value>All passion is removed from {0}. Additionally, the carrier's aptitude in {0} is reduced by 5. Aptitude acts like an offset on skill level.</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>//GeneTemplateDef[defName="AptitudeTerrible"]/iconPath/text()</xpath>
+				<value>UI/Icons/Genes/Skills/{0}/PassionDrop</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>//GeneTemplateDef[defName="AptitudeTerrible"]/aptitudeOffset/text()</xpath>
+				<value>-5</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>//GeneTemplateDef[defName="AptitudePoor"]/label/text()</xpath>
+				<value>{0} apathy</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>//GeneTemplateDef[defName="AptitudePoor"]/description/text()</xpath>
+				<value>All passion is removed from {0}.</value>
+			</li>
 			<li Class="PatchOperationRemove">
-				<xpath>//GeneTemplateDef[@ParentName="GeneAptitudeBase"] | //genes/li[contains(., 'Aptitude')]</xpath>
+				<xpath>//GeneTemplateDef[defName="AptitudePoor"]/aptitudeOffset</xpath>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>//GeneTemplateDef[defName="AptitudeStrong"]/label/text()</xpath>
+				<value>{0} interest</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>//GeneTemplateDef[defName="AptitudeStrong"]/description/text()</xpath>
+				<value>One level of passion is added to {0}.</value>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>//GeneTemplateDef[defName="AptitudeStrong"]/aptitudeOffset</xpath>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>//GeneTemplateDef[defName="AptitudeRemarkable"]/description/text()</xpath>
+				<value>One level of passion is added to {0}. Additionally, the carrier's aptitude in {0} is increased by 5. Aptitude acts like an offset on skill level.</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>//GeneTemplateDef[defName="AptitudeRemarkable"]/iconPath/text()</xpath>
+				<value>UI/Icons/Genes/Skills/{0}/PassionAdd</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>//GeneTemplateDef[defName="AptitudeRemarkable"]/aptitudeOffset/text()</xpath>
+				<value>5</value>
 			</li>
 		</operations>
 	</Operation>

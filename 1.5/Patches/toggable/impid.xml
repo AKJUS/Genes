@@ -3,90 +3,34 @@
 		<enabled>True</enabled>
 		<label>rework impid</label>
 		<operations>
-			<!--replace impid genepool-->
+			<!--replace genepool-->
 			<li Class="PatchOperationReplace">
 				<xpath>//XenotypeDef[defName="Impid"]/genes</xpath>
 				<value>
 					<genes>
+						<li>Aggression_Aggressive</li>
 						<li>Beard_NoBeardOnly</li>
 						<li>Body_Standard</li>
 						<li>FireResistant</li>
+						<li>FireSpew</li>
+						<li>Hair_Blonde</li>
 						<li>Hair_LightOrange</li>
 						<li>Hair_SandyBlonde</li>
 						<li>Headbone_MiniHorns</li>
 						<li>MaxTemp_LargeIncrease</li>
-						<li>Mood_Depressive</li>
-						<li>Pain_Reduced</li>
-						<li>PsychicAbility_Deaf</li>
+						<li>MinTemp_SmallIncrease</li>
+						<li>Mood_Pessimist</li>
 						<li>Skin_DeepRed</li>
 						<li>Skin_Orange</li>
 					</genes>
 				</value>
 			</li>
-			<!--lower impid combat power to reflect changes-->
-			<li Class="PatchOperationReplace">
-				<xpath>//XenotypeDef[defName="Impid"]/combatPowerFactor/text()</xpath>
-				<value>1</value>
-			</li>
-			<!--add greater impids-->
-			<li Class="PatchOperationAdd">
-				<xpath>Defs</xpath>
-				<value>
-					<XenotypeDef>
-						<defName>GreaterImpid</defName>
-						<label>greater impid</label>
-						<description>Made for desert life, impid cultures live on many rimworlds and dry deathworlds. Impids are extremely fast-moving, easily tolerate high temperatures, and can spew fire from their mouths. Though they are masters on the sand, impids struggle in other environments. They are terrible with farming. They fight well at range, but in close combat their physical weakness becomes apparent.\n\nOutlanders call them dustrunners because of their speed over open terrain and resistance to heat. Some tribes call them devils because of their horns and because they burn their enemies. Impid tribes' combat tactics usually center on rapid-approach incendiary attacks using both handheld fire weapons and their fire spew ability.</description>
-						<descriptionShort>Made for desert life, impids are very fast, can spew fire from their mouths, and easily tolerate high temperatures. They fight well at range, but in close combat they do little damage. They are terrible with farming, and have weak immune systems.</descriptionShort>
-						<iconPath>UI/Icons/Xenotypes/Impid</iconPath>
-						<inheritable>true</inheritable>
-						<combatPowerFactor>1.5</combatPowerFactor>
-						<nameMaker>NamerPersonImpid</nameMaker>
-						<chanceToUseNameMaker>1</chanceToUseNameMaker>
-						<factionlessGenerationWeight>0</factionlessGenerationWeight>
-						<genes>
-							<li MayRequire="jintuzilamian.gene.xenocosmetic">AFU_HA_DemonHorn</li>
-							<li>FireSpew</li>
-							<li>PsychicAbility_Deaf</li>
-							<li>Mood_Pessimist</li>
-							<li>MaxTemp_LargeIncrease</li>
-							<li>FireResistant</li>
-							<li>KillThirst</li>
-							<li>Robust</li>
-							<li>Pain_Reduced</li>
-							<li>Beard_NoBeardOnly</li>
-							<li>Headbone_MiniHorns</li>
-							<li>FacialRidges</li>
-							<li>Body_Standard</li>
-							<li>Hair_SandyBlonde</li>
-							<li>Hair_LightOrange</li>
-							<li>Skin_Orange</li>
-							<li>Skin_DeepRed</li>
-						</genes>
-					</XenotypeDef>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>//XenotypeDef[defName="Impid"]</xpath>
-				<value>
-					<doubleXenotypeChances>
-						<GreaterImpid>0.05</GreaterImpid>
-					</doubleXenotypeChances>
-				</value>
-			</li>
-			<!--reduce commonality of impid settlements-->
+			<!--reduce faction settlement commonality-->
 			<li Class="PatchOperationAdd">
 				<xpath>//FactionDef[defName="TribeSavageImpid"]</xpath>
 				<value>
 					<settlementGenerationWeight Inherit="False">0.8</settlementGenerationWeight>
 				</value>
-			</li>
-			<!--remove impids from Waster faction-->
-			<li Class="PatchOperationRemove">
-				<xpath>//FactionDef[defName="PirateWaster"]/xenotypeSet/xenotypeChances/Impid</xpath>
-			</li>
-			<!--remove impid earliest raid date since they're not OP anymore-->
-			<li Class="PatchOperationRemove">
-				<xpath>//FactionDef[defName="TribeSavageImpid"]/earliestRaidDays</xpath>
 			</li>
 		</operations>
 	</Operation>

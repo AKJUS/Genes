@@ -1,0 +1,45 @@
+<Defs>
+    <HediffDef ParentName="RoleStatBuff">
+        <defName>CorePlus_MiningFrenzy</defName>
+        <label>mining frenzy</label>
+        <description>Focused on the job.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <showRemainingTime>True</showRemainingTime>
+            </li>
+            <li Class="HediffCompProperties_DisappearsOnDeath"/>
+        </comps>
+        <isBad>false</isBad>
+        <blocksSocialInteraction>true</blocksSocialInteraction>
+        <clearsEgo>true</clearsEgo>
+        <aptitudes>
+            <Mining>5</Mining>
+        </aptitudes>
+        <disablesNeeds>
+            <li>Mood</li>
+            <li>Food</li>
+            <li>Rest</li>
+            <li>Joy</li>
+            <li>Beauty</li>
+            <li>Comfort</li>
+            <li>Outdoors</li>
+            <li>Indoors</li>
+            <li>DrugDesire</li>
+            <li>RoomSize</li>
+            <li MayRequire="rim.job.world">Sex</li>
+        </disablesNeeds>
+        <stages>
+            <li>
+                <statOffsets>
+                    <MoveSpeed>0.25</MoveSpeed>
+                    <DeepDrillingSpeed>0.5</DeepDrillingSpeed>
+                    <MiningSpeed>0.5</MiningSpeed>
+                    <SmoothingSpeed>0.5</SmoothingSpeed>
+                </statOffsets>
+                <blocksMentalBreaks>true</blocksMentalBreaks>
+                <blocksSleeping>true</blocksSleeping>
+            </li>
+        </stages>
+    </HediffDef>
+</Defs>

@@ -1,19 +1,32 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
 		<enabled>True</enabled>
-		<label>remove dirtmoles</label>
+		<label>rework dirtmole</label>
 		<operations>
-			<li Class="PatchOperationRemove">
-				<xpath>//XenotypeDef/doubleXenotypeChances/Dirtmole</xpath>
-			</li>
-			<li Class="PatchOperationRemove">
-				<xpath>//xenotypeSet/xenotypeChances/Dirtmole</xpath>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>//XenotypeDef[defName="Dirtmole"]</xpath>
+			<!--replace genepool-->
+			<li Class="PatchOperationReplace">
+				<xpath>//XenotypeDef[defName="Dirtmole"]/genes</xpath>
 				<value>
-					<factionlessGenerationWeight>0</factionlessGenerationWeight>
+					<genes>
+						<li MayRequire="oppey.eyegenes2">Eyes_DarkestGray</li>
+						<li MayRequire="oppey.eyegenes2">Eyes_DarkGray</li>
+						<li MayRequire="oppey.eyegenes2">Eyes_LightGray</li>
+						<li>AptitudeRemarkable_Mining</li>
+						<li>CorePlus_MiningFrenzy</li>
+						<li>DarkVision</li>
+						<li>Eyes_Gray</li>
+						<li>MeleeDamage_Strong</li>
+						<li>MoveSpeed_Slow</li>
+						<li>Nearsighted</li>
+						<li>Skin_LightGray</li>
+						<li>StrongStomach</li>
+						<li>UVSensitivity_Intense</li>
+					</genes>
 				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>//XenotypeDef[defName="Dirtmole"]/description/text()</xpath>
+				<value>Genetically modified xenohumans, originating as a slave race from a mining colony on Xanides. They were engineered specfiically for productivity in the mines. To deter any would-be escapees, they were designed to have poor long-distance vision and an adverse reaction to sunlight.\n\nThis xenotype is known colloquially as the dirtmoles. Today, dirtmoles have expanded out of their home planet and rule many confined spaces in the anthrosphere. They can be found in deep mines, cramped low-tech spacecraft, and teeming by the billions in the dark underlayers of countless urbworlds.</value>
 			</li>
 		</operations>
 	</Operation>

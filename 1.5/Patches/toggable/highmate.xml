@@ -1,9 +1,9 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
 		<enabled>True</enabled>
-		<label>rework highmate</label>
+		<label>remove highmate</label>
 		<operations>
-			<!--replace highmate genepool-->
+			<!--turns out I hate highmates so I'm going to make this patch remove them instead
 			<li Class="PatchOperationReplace">
 				<xpath>//XenotypeDef[defName="Highmate"]/genes</xpath>
 				<value>
@@ -26,11 +26,19 @@
 					</genes>
 				</value>
 			</li>
-			<!--make highmate genes uninheritable-->
 			<li Class="PatchOperationAdd">
 				<xpath>//XenotypeDef[defName="Highmate"]</xpath>
 				<value>
 					<inheritable>false</inheritable>
+				</value>
+			</li>-->
+			<li Class="PatchOperationRemove">
+				<xpath>//xenotypeSet/xenotypeChances/Highmate</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>//XenotypeDef[defName="Highmate"]</xpath>
+				<value>
+					<factionlessGenerationWeight>0</factionlessGenerationWeight>
 				</value>
 			</li>
 		</operations>

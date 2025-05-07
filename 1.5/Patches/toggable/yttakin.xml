@@ -1,8 +1,9 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
 		<enabled>False</enabled>
-		<label>remove yttakin</label>
+		<label>rework yttakin</label>
 		<operations>
+			<!--turns out I like yttakin, so I'm going to make some minor adjustments instead
 			<li Class="PatchOperationRemove">
 				<xpath>//XenotypeDef/doubleXenotypeChances/Yttakin</xpath>
 			</li>
@@ -23,6 +24,9 @@
 			</li>
 			<li Class="PatchOperationRemove">
 				<xpath>//PawnKindDef[defName="Pirate_Yttakin" or defName="Scavenger_Yttakin" or defName="Drifter_Yttakin" or defName="Thrasher_Yttakin" or defName="Mercenary_Gunner_Yttakin" or defName="Mercenary_Heavy_Yttakin" or defName="Mercenary_Slasher_Yttakin" or defName="Mercenary_Sniper_Yttakin" or defName="Mercenary_Elite_Yttakin"]</xpath>
+			</li>-->
+			<li Class="PatchOperationRemove">
+				<xpath>//XenotypeDef[defName="Yttakin"]/genes/li[contains(text(), "Aptitude")]</xpath>
 			</li>
 		</operations>
 	</Operation>

@@ -3,32 +3,33 @@
 		<enabled>True</enabled>
 		<label>rework waster</label>
 		<operations>
-			<!--replace waster genepool-->
+			<!--replace genepool-->
 			<li Class="PatchOperationReplace">
 				<xpath>//XenotypeDef[defName="Waster"]/genes</xpath>
 				<value>
 					<genes>
+						<li MayRequire="oppey.eyegenes2">Eyes_BrightGreen</li>
+						<li MayRequire="oppey.eyegenes2">Eyes_DarkGreen</li>
+						<li MayRequire="oppey.eyegenes2">Eyes_Gray</li>
+						<li MayRequire="oppey.eyegenes2">Eyes_Green</li>
 						<li MayRequire="oppey.eyegenes2">Eyes_LimeGreen</li>
 						<li>Aggression_HyperAggressive</li>
 						<li>Beard_NoBeardOnly</li>
+						<li>Beauty_VeryUgly</li>
 						<li>Body_Thin</li>
-						<li>Eyes_Gray</li>
 						<li>Hair_Gray</li>
 						<li>Hair_ShortOnly</li>
 						<li>Head_Gaunt</li>
-						<li>MoveSpeed_Slow</li>
 						<li>PollutionRush</li>
-						<li>PsychicAbility_Deaf</li>
 						<li>Skin_SlateGray</li>
-						<li>ToxicEnvironmentResistance_Total</li>
 						<li>ToxResist_Total</li>
 					</genes>
 				</value>
 			</li>
-			<!--make piratewaster a waster-only faction-->
+			<!--fix faction xenotypeSet-->
 			<li Class="PatchOperationReplace">
 				<xpath>//FactionDef[defName="PirateWaster"]/xenotypeSet/xenotypeChances/Waster/text()</xpath>
-				<value>1</value>
+				<value>999</value>
 			</li>
 		</operations>
 	</Operation>

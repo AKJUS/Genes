@@ -1,0 +1,31 @@
+<Defs>
+    <AbilityGroupDef>
+        <defName>CorePlus_Daily</defName>
+        <cooldownTicks>60000</cooldownTicks>
+        <sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
+    </AbilityGroupDef>
+    <AbilityDef ParentName="RoleAuraBuffBase">
+        <defName>CorePlus_MiningFrenzy</defName>
+        <label>mining frenzy</label>
+        <description>The caster shuts out all distractions to focus on mining.</description>
+        <iconPath>UI/Icons/Genes/Skills/Mining/PassionAdd</iconPath>
+        <warmupMoteSocialSymbol>UI/Icons/Genes/Skills/Mining/PassionAdd</warmupMoteSocialSymbol>
+        <displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+        <disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+        <groupDef Inherit="False" />
+        <statBases>
+            <Ability_Duration>250</Ability_Duration>
+        </statBases>
+        <verbProperties>
+            <range>0</range>
+        </verbProperties>
+        <comps>
+            <li Class="CompProperties_AbilityGiveHediff">
+                <compClass>CompAbilityEffect_GiveHediff</compClass>
+                <hediffDef>CorePlus_MiningFrenzy</hediffDef>
+                <onlyApplyToSelf>True</onlyApplyToSelf>
+                <replaceExisting>True</replaceExisting>
+            </li>
+        </comps>
+    </AbilityDef>
+</Defs>
