@@ -1,18 +1,15 @@
 <Defs>
     <GeneDef>
-        <defName>CorePlus_MiningFrenzy</defName>
-        <label>mining frenzy</label>
+        <defName>CorePlus_MiningFocus</defName>
+        <label>mining focus</label>
         <description>Once per day, carriers of this gene shut out all distractions and focus on mining for several hours.</description>
         <iconPath>UI/Icons/Genes/Skills/Mining/PassionAdd</iconPath>
         <displayCategory>Ability</displayCategory>
         <abilities>
-            <li>CorePlus_MiningFrenzy</li>
+            <li>CorePlus_MiningFocus</li>
         </abilities>
-        <statFactors>
-            <RestFallRateFactor>1.3</RestFallRateFactor>
-        </statFactors>
         <descriptionHyperlinks>
-            <AbilityDef>CorePlus_MiningFrenzy</AbilityDef>
+            <AbilityDef>CorePlus_MiningFocus</AbilityDef>
         </descriptionHyperlinks>
         <biostatMet>-2</biostatMet>
         <biostatCpx>1</biostatCpx>

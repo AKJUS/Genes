@@ -1,29 +1,55 @@
 <Defs>
+    <!--parent-->
     <AbilityGroupDef>
         <defName>CorePlus_Daily</defName>
         <cooldownTicks>60000</cooldownTicks>
-        <sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
     </AbilityGroupDef>
-    <AbilityDef ParentName="RoleAuraBuffBase">
-        <defName>CorePlus_MiningFrenzy</defName>
-        <label>mining frenzy</label>
-        <description>The caster shuts out all distractions to focus on mining.</description>
-        <iconPath>UI/Icons/Genes/Skills/Mining/PassionAdd</iconPath>
-        <warmupMoteSocialSymbol>UI/Icons/Genes/Skills/Mining/PassionAdd</warmupMoteSocialSymbol>
-        <displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+    <AbilityDef Abstract="True" Name="CorePlus_SkillFocusAbility">
+        <canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+        <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+        <cooldownTicksRange>60000</cooldownTicksRange>
         <disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
-        <groupDef Inherit="False" />
+        <displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+        <groupDef>CorePlus_Daily</groupDef>
+        <hotKey>Misc12</hotKey>
+        <jobDef>CastAbilityOnThing</jobDef>
+        <sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
+        <showPsycastEffects>False</showPsycastEffects>
+        <stunTargetWhileCasting>True</stunTargetWhileCasting>
+        <targetRequired>False</targetRequired>
+        <warmupStartSound>CombatCommand_Warmup</warmupStartSound>
+        <verbProperties>
+            <drawAimPie>False</drawAimPie>
+            <range>-1</range>
+            <requireLineOfSight>False</requireLineOfSight>
+            <verbClass>Verb_CastAbility</verbClass>
+            <warmupTime>0.5</warmupTime>
+            <targetParams>
+                <canTargetAnimals>false</canTargetAnimals>
+                <canTargetBuildings>false</canTargetBuildings>
+                <canTargetHumans>false</canTargetHumans>
+                <canTargetMechs>false</canTargetMechs>
+                <canTargetPawns>false</canTargetPawns>
+                <canTargetSelf>true</canTargetSelf>
+            </targetParams>
+        </verbProperties>
         <statBases>
             <Ability_Duration>250</Ability_Duration>
         </statBases>
-        <verbProperties>
-            <range>0</range>
-        </verbProperties>
+    </AbilityDef>
+    <!--mining-->
+    <AbilityDef ParentName="CorePlus_SkillFocusAbility">
+        <defName>CorePlus_MiningFocus</defName>
+        <label>mining focus</label>
+        <description>The caster shuts out all distractions to focus on mining.</description>
+        <iconPath>UI/Icons/Genes/Skills/Mining/PassionAdd</iconPath>
+        <warmupMoteSocialSymbol>UI/Icons/Genes/Skills/Mining/PassionAdd</warmupMoteSocialSymbol>
         <comps>
             <li Class="CompProperties_AbilityGiveHediff">
                 <compClass>CompAbilityEffect_GiveHediff</compClass>
-                <hediffDef>CorePlus_MiningFrenzy</hediffDef>
+                <hediffDef>CorePlus_MiningFocus</hediffDef>
                 <onlyApplyToSelf>True</onlyApplyToSelf>
+                <onlyBrain>True</onlyBrain>
                 <replaceExisting>True</replaceExisting>
             </li>
         </comps>

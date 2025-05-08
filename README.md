@@ -16,7 +16,7 @@
 > [!IMPORTANT]
 > Requires [Vanilla Expanded Framework](https://steamcommunity.com/sharedfiles/filedetails/?id=2023507013).
 ## New Genes
-**Mining frenzy**
+**Mining focus**
 Increases sleep fall rate by 30%. and grants access to a new ability with the same name:
 - Disables almost all needs (patched for RJW)
 - Increases deep drilling speed, mining speed, move speed, and total mining skill by 5 for 6 hours
@@ -44,7 +44,7 @@ Genelist:
 - Nearsighted (+2)
 - Slow runner (+3)
 - Strong melee damage (-2)
-- **Mining frenzy** (-2)
+- **Mining focus** (-2)
 - **Strong stomach** (-1)
 
 Complexity: 7\

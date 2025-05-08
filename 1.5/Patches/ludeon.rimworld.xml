@@ -1,0 +1,15 @@
+<Patch>
+    <!--stonecutter's spot-->
+    <Operation Class="PatchOperationAdd">
+        <xpath>//WorkGiverDef[defName="DoBillsStonecut"]/fixedBillGiverDefs</xpath>
+        <value>
+            <li>CorePlus_StonecutterSpot</li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>//RecipeDef[recipeUsers/li/text()="TableStonecutter"]/recipeUsers</xpath>
+        <value>
+            <li>CorePlus_StonecutterSpot</li>
+        </value>
+    </Operation>
+</Patch>
