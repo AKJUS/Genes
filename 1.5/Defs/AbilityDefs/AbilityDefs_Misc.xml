@@ -5,23 +5,23 @@
         <cooldownTicks>60000</cooldownTicks>
     </AbilityGroupDef>
     <AbilityDef Abstract="True" Name="CorePlus_SkillFocusAbility">
-        <canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+        <canUseAoeToGetTargets>false</canUseAoeToGetTargets>
         <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
         <cooldownTicksRange>60000</cooldownTicksRange>
-        <disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
-        <displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+        <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+        <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
         <groupDef>CorePlus_Daily</groupDef>
         <hotKey>Misc12</hotKey>
         <jobDef>CastAbilityOnThing</jobDef>
         <sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
-        <showPsycastEffects>False</showPsycastEffects>
-        <stunTargetWhileCasting>True</stunTargetWhileCasting>
-        <targetRequired>False</targetRequired>
+        <showPsycastEffects>false</showPsycastEffects>
+        <stunTargetWhileCasting>true</stunTargetWhileCasting>
+        <targetRequired>false</targetRequired>
         <warmupStartSound>CombatCommand_Warmup</warmupStartSound>
         <verbProperties>
-            <drawAimPie>False</drawAimPie>
+            <drawAimPie>false</drawAimPie>
             <range>-1</range>
-            <requireLineOfSight>False</requireLineOfSight>
+            <requireLineOfSight>false</requireLineOfSight>
             <verbClass>Verb_CastAbility</verbClass>
             <warmupTime>0.5</warmupTime>
             <targetParams>
@@ -48,9 +48,9 @@
             <li Class="CompProperties_AbilityGiveHediff">
                 <compClass>CompAbilityEffect_GiveHediff</compClass>
                 <hediffDef>CorePlus_MiningFocus</hediffDef>
-                <onlyApplyToSelf>True</onlyApplyToSelf>
-                <onlyBrain>True</onlyBrain>
-                <replaceExisting>True</replaceExisting>
+                <onlyApplyToSelf>true</onlyApplyToSelf>
+                <onlyBrain>true</onlyBrain>
+                <replaceExisting>true</replaceExisting>
             </li>
         </comps>
     </AbilityDef>

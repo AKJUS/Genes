@@ -1,6 +1,6 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>False</enabled>
+		<enabled>false</enabled>
 		<label>flatten gene complexity</label>
 		<operations>
 			<li Class="PatchOperationRemove">
@@ -15,7 +15,7 @@
 		</operations>
 	</Operation>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>False</enabled>
+		<enabled>false</enabled>
 		<label>flatten metabolic efficiency</label>
 		<operations>
 			<li Class="PatchOperationRemove">

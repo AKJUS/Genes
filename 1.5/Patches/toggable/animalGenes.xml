@@ -1,6 +1,6 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>True</enabled>
+		<enabled>true</enabled>
 		<label>animal genes slightly buff tame/train</label>
 		<operations>
 			<li Class="PatchOperationAdd">

@@ -1,6 +1,6 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>True</enabled>
+		<enabled>true</enabled>
 		<label>rework waster</label>
 		<operations>
 			<!--replace genepool-->

@@ -1,6 +1,6 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>True</enabled>
+		<enabled>true</enabled>
 		<label>remove highmate</label>
 		<operations>
 			<!--turns out I hate highmates so I'm going to make this patch remove them instead
