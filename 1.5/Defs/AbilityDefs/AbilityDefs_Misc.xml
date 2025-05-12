@@ -1,5 +1,4 @@
 <Defs>
-    <!--parent-->
     <AbilityGroupDef>
         <defName>CorePlus_Daily</defName>
         <cooldownTicks>60000</cooldownTicks>
@@ -37,7 +36,6 @@
             <Ability_Duration>250</Ability_Duration>
         </statBases>
     </AbilityDef>
-    <!--mining-->
     <AbilityDef ParentName="CorePlus_SkillFocusAbility">
         <defName>CorePlus_MiningFocus</defName>
         <label>mining focus</label>

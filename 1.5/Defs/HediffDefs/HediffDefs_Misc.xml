@@ -1,5 +1,4 @@
 <Defs>
-    <!--parent-->
     <HediffDef Abstract="True" Name="CorePlus_SkillFocusHediff">
         <hediffClass>HediffWithComps</hediffClass>
         <defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
@@ -7,15 +6,11 @@
         <blocksSocialInteraction>true</blocksSocialInteraction>
         <clearsEgo>true</clearsEgo>
         <disablesNeeds>
-            <!--<li>Mood</li>-->
-            <!--<li>Food</li>-->
-            <!--<li>Rest</li> already blocks sleeping-->
             <li>Joy</li>
             <li>Beauty</li>
             <li>Comfort</li>
             <li>Outdoors</li>
             <li>Indoors</li>
-            <!--<li>DrugDesire</li>-->
             <li>RoomSize</li>
             <li MayRequire="rim.job.world">Sex</li>
             <li MayRequire="dubwise.dubsbadhygiene">Hygiene</li>
@@ -27,7 +22,6 @@
             <li Class="HediffCompProperties_DisappearsOnDeath"/>
         </comps>
     </HediffDef>
-    <!--mining-->
     <HediffDef ParentName="CorePlus_SkillFocusHediff">
         <defName>CorePlus_MiningFocus</defName>
         <label>mining focus</label>
