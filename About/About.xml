@@ -2,14 +2,10 @@
 	<packageId>coreplus.genes</packageId>
 	<name>[CorePlus] Genes</name>
 	<author>boomer</author>
-	<description />
 	<supportedVersions>
 		<li>1.5</li>
 	</supportedVersions>
-	<modVersion />
-	<modIconPath IgnoreIfNoMatchingField="True" />
 	<url>https://github.com/RimCorePlus/Genes</url>
-	<descriptionsByVersion />
 	<modDependencies>
 		<li>
 			<packageId>Ludeon.RimWorld.Biotech</packageId>
@@ -22,10 +18,6 @@
 			<downloadUrl>https://github.com/Vanilla-Expanded/VanillaExpandedFramework</downloadUrl>
 		</li>
 	</modDependencies>
-	<modDependenciesByVersion />
-	<loadBefore />
-	<loadBeforeByVersion />
-	<forceLoadBefore />
 	<loadAfter>
 		<li>boomer.debloat</li>
 		<li>boomer.rebalance</li>
@@ -33,8 +25,4 @@
 		<li>jintuzilamian.gene.xenocosmetic</li>
 		<li>oskarpotocki.vanillafactionsexpanded.core</li>
 	</loadAfter>
-	<loadAfterByVersion />
-	<forceLoadAfter />
-	<incompatibleWith />
-	<incompatibleWithByVersion />
 </ModMetaData>
