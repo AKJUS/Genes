@@ -16,6 +16,8 @@
 > [!IMPORTANT]
 > Requires [Vanilla Expanded Framework](https://steamcommunity.com/sharedfiles/filedetails/?id=2023507013).
 
+Skill frenzies added by submodules like [Dirtmole](https://github.com/RimCorePlus/Genes-Dirtmole) have a mild incompatibility with Enhanced Beliefs, which spams harmless red errors when joy is disabled for a human pawn.
+
 ## Changes
 All changes are disabled by default.
 

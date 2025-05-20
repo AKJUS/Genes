@@ -6,9 +6,10 @@
 	<supportedVersions>
 		<li>1.5</li>
 	</supportedVersions>
-	<modVersion>1.5.0</modVersion>
+	<modVersion />
 	<modIconPath IgnoreIfNoMatchingField="True" />
 	<url>https://github.com/RimCorePlus/Genes</url>
+	<descriptionsByVersion />
 	<modDependencies>
 		<li>
 			<packageId>Ludeon.RimWorld.Biotech</packageId>
@@ -21,16 +22,19 @@
 			<downloadUrl>https://github.com/Vanilla-Expanded/VanillaExpandedFramework</downloadUrl>
 		</li>
 	</modDependencies>
+	<modDependenciesByVersion />
 	<loadBefore />
+	<loadBeforeByVersion />
+	<forceLoadBefore />
 	<loadAfter>
 		<li>boomer.debloat</li>
-		<li>coreplus.rebalance</li>
+		<li>boomer.rebalance</li>
 		<li>dankpyon.medieval.overhaul</li>
-		<li>erin.shisune</li>
 		<li>jintuzilamian.gene.xenocosmetic</li>
 		<li>oskarpotocki.vanillafactionsexpanded.core</li>
-		<li>vanillaracesexpanded.android</li>
-		<li>vanillaracesexpanded.phytokin</li>
 	</loadAfter>
+	<loadAfterByVersion />
+	<forceLoadAfter />
 	<incompatibleWith />
+	<incompatibleWithByVersion />
 </ModMetaData>
