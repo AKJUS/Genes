@@ -22,24 +22,4 @@
             <li Class="HediffCompProperties_DisappearsOnDeath"/>
         </comps>
     </HediffDef>
-    <HediffDef ParentName="CorePlus_SkillFocusHediff">
-        <defName>CorePlus_MiningFocus</defName>
-        <label>mining focus</label>
-        <description>Focused on the job.</description>
-        <aptitudes>
-            <Mining>5</Mining>
-        </aptitudes>
-        <stages>
-            <li>
-                <statOffsets>
-                    <MoveSpeed>0.25</MoveSpeed>
-                    <DeepDrillingSpeed>0.5</DeepDrillingSpeed>
-                    <MiningSpeed>0.5</MiningSpeed>
-                    <SmoothingSpeed>0.5</SmoothingSpeed>
-                </statOffsets>
-                <blocksMentalBreaks>true</blocksMentalBreaks>
-                <blocksSleeping>true</blocksSleeping>
-            </li>
-        </stages>
-    </HediffDef>
 </Defs>

@@ -1,13 +1,13 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>true</enabled>
-		<label>remove genie</label>
+		<enabled>false</enabled>
+		<label>Remove dirtmole</label>
 		<operations>
 			<li Class="PatchOperationRemove">
-				<xpath>//xenotypeSet/xenotypeChances/Genie</xpath>
+				<xpath>//xenotypeSet/xenotypeChances/Dirtmole</xpath>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>//XenotypeDef[defName="Genie"]</xpath>
+				<xpath>//XenotypeDef[defName="Dirtmole"]</xpath>
 				<value>
 					<factionlessGenerationWeight>0</factionlessGenerationWeight>
 				</value>

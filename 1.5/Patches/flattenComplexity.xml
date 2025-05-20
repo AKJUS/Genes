@@ -1,0 +1,17 @@
+<Patch>
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>false</enabled>
+		<label>Flatten gene complexity</label>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>//biostatCpx</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>//GeneDef</xpath>
+				<value>
+					<biostatCpx>0</biostatCpx>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

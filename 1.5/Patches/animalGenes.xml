@@ -1,7 +1,7 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>true</enabled>
-		<label>animal genes slightly buff tame/train</label>
+		<enabled>false</enabled>
+		<label>Animal genes slightly increase tame/train chance</label>
 		<operations>
 			<li Class="PatchOperationAdd">
 				<xpath>//GeneDef[defName="Ears_Pig" or defName="Ears_Cat" or defName="Ears_Floppy" or defName="Nose_Pig" or defName="Hands_Pig" or defName="VoicePig" or defName="VoiceRoar" or defName="Tail_Smooth"]</xpath>

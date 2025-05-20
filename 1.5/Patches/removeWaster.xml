@@ -1,0 +1,17 @@
+<Patch>
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>false</enabled>
+		<label>Remove waster</label>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>//FactionDef[defName="PirateWaster"] | //PawnKindDef[defaultFactionType/text()="PirateWaster"] | //XenotypeDef/doubleXenotypeChances/Waster | //xenotypeSet/xenotypeChances/Waster | //siteFactions/li[text()="PirateWaster"]</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>//XenotypeDef[defName="Waster"]</xpath>
+				<value>
+					<factionlessGenerationWeight>0</factionlessGenerationWeight>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

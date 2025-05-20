@@ -1,15 +1,11 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>true</enabled>
-		<label>rework genetic aptitudes</label>
+		<enabled>false</enabled>
+		<label>Rework genetic aptitudes</label>
 		<operations>
 			<li Class="PatchOperationReplace">
 				<xpath>//GeneTemplateDef[defName="AptitudeTerrible"]/description/text()</xpath>
 				<value>All passion is removed from {0}. Additionally, the carrier's aptitude in {0} is reduced by 5. Aptitude acts like an offset on skill level.</value>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>//GeneTemplateDef[defName="AptitudeTerrible"]/iconPath/text()</xpath>
-				<value>UI/Icons/Genes/Skills/{0}/PassionDrop</value>
 			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>//GeneTemplateDef[defName="AptitudeTerrible"]/aptitudeOffset/text()</xpath>
@@ -40,10 +36,6 @@
 			<li Class="PatchOperationReplace">
 				<xpath>//GeneTemplateDef[defName="AptitudeRemarkable"]/description/text()</xpath>
 				<value>One level of passion is added to {0}. Additionally, the carrier's aptitude in {0} is increased by 5. Aptitude acts like an offset on skill level.</value>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>//GeneTemplateDef[defName="AptitudeRemarkable"]/iconPath/text()</xpath>
-				<value>UI/Icons/Genes/Skills/{0}/PassionAdd</value>
 			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>//GeneTemplateDef[defName="AptitudeRemarkable"]/aptitudeOffset/text()</xpath>

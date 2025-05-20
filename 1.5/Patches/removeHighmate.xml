@@ -1,0 +1,17 @@
+<Patch>
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>false</enabled>
+		<label>Remove highmate</label>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>//xenotypeSet/xenotypeChances/Highmate</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>//XenotypeDef[defName="Highmate"]</xpath>
+				<value>
+					<factionlessGenerationWeight>0</factionlessGenerationWeight>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

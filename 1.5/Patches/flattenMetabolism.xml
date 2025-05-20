@@ -1,0 +1,17 @@
+<Patch>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>false</enabled>
+        <label>Flatten metabolic efficiency</label>
+        <operations>
+            <li Class="PatchOperationRemove">
+                <xpath>//biostatMet</xpath>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>//GeneDef</xpath>
+                <value>
+                    <biostatMet>0</biostatMet>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

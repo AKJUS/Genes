@@ -36,20 +36,4 @@
             <Ability_Duration>250</Ability_Duration>
         </statBases>
     </AbilityDef>
-    <AbilityDef ParentName="CorePlus_SkillFocusAbility">
-        <defName>CorePlus_MiningFocus</defName>
-        <label>mining focus</label>
-        <description>The caster shuts out all distractions to focus on mining.</description>
-        <iconPath>UI/Icons/Genes/Skills/Mining/PassionAdd</iconPath>
-        <warmupMoteSocialSymbol>UI/Icons/Genes/Skills/Mining/PassionAdd</warmupMoteSocialSymbol>
-        <comps>
-            <li Class="CompProperties_AbilityGiveHediff">
-                <compClass>CompAbilityEffect_GiveHediff</compClass>
-                <hediffDef>CorePlus_MiningFocus</hediffDef>
-                <onlyApplyToSelf>true</onlyApplyToSelf>
-                <onlyBrain>true</onlyBrain>
-                <replaceExisting>true</replaceExisting>
-            </li>
-        </comps>
-    </AbilityDef>
 </Defs>

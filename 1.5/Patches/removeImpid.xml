@@ -1,0 +1,17 @@
+<Patch>
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>false</enabled>
+		<label>Remove impid</label>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>//FactionDef[defName="TribeSavageImpid"] | //PawnKindDef[defaultFactionType/text()="TribeSavageImpid"] | //XenotypeDef/doubleXenotypeChances/Impid | //xenotypeSet/xenotypeChances/Impid</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>//XenotypeDef[defName="Impid"]</xpath>
+				<value>
+					<factionlessGenerationWeight>0</factionlessGenerationWeight>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

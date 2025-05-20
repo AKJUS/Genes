@@ -1,0 +1,15 @@
+<Patch>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>false</enabled>
+        <label>Normal body piggers</label>
+        <operations>
+            <li Class="PatchOperationRemove">
+                <xpath>//XenotypeDef[defName="Pigskin"]/genes/li[text()="Body_Hulk"]</xpath>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>//XenotypeDef[defName="Pigskin"]/genes/li[text()="Body_Fat"]/text()</xpath>
+                <value>Body_Standard</value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

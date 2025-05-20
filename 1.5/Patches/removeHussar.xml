@@ -1,7 +1,7 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>true</enabled>
-		<label>remove hussar</label>
+		<enabled>false</enabled>
+		<label>Remove hussar</label>
 		<operations>
 			<li Class="PatchOperationRemove">
 				<xpath>//xenotypeSet/xenotypeChances/Hussar</xpath>
