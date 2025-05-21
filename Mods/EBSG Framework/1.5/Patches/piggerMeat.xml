@@ -1,7 +1,7 @@
 <Patch>
-    <Operation MayRequire="ebsg.framework" Class="VFECore.PatchOperationToggableSequence">
-        <enabled>true</enabled>
-        <label>Butchering piggers yields pork instead of human meat</label>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>false</enabled>
+        <label>[EBSG Framework] Butchering piggers yields pork</label>
         <operations>
             <li Class="PatchOperationAdd">
                 <xpath>//GeneDef[defName="VoicePig"]</xpath>
