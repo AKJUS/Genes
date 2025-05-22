@@ -19,7 +19,6 @@
 		</li>
 	</modDependencies>
 	<loadAfter>
-		<li>boomer.rebalance</li>
 		<li>dankpyon.medieval.overhaul</li>
 		<li>ebsg.framework</li>
 		<li>jintuzilamian.gene.xenocosmetic</li>
