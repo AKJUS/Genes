@@ -33,6 +33,7 @@ All xenotypes except for sanguophage can be removed from pawn generation in a no
 Removing wasters will create a harmless red error.
 
 ### Misc changes
+- Add highmates to the empire
 - Give sanguophage red eyes (more shades with EyeGenes2)
 - Flatten gene complexity
 - Flatten metabolic efficiency

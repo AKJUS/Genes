@@ -1,0 +1,14 @@
+<Patch>
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>false</enabled>
+		<label>Add highmates to the empire</label>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>//FactionDef[defName="Empire"]/xenotypeSet/xenotypeChances</xpath>
+				<value>
+					<Highmate>0.025</Highmate>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>
