@@ -1,0 +1,16 @@
+<Defs>
+    <ModSettingsFramework.ModOptionCategoryDef Name="RG_ModOptionsBase" Abstract="True">
+        <modSettingsName>[RCP] Genes</modSettingsName>
+        <modPackageSettingsID>RCP.Genes</modPackageSettingsID>
+    </ModSettingsFramework.ModOptionCategoryDef>
+    <ModSettingsFramework.ModOptionCategoryDef ParentName="RG_ModOptionsBase">
+        <defName>RCP_GenesPatches</defName>
+        <label>Misc. Patches</label>
+        <order>0</order>
+    </ModSettingsFramework.ModOptionCategoryDef>
+    <ModSettingsFramework.ModOptionCategoryDef ParentName="RG_ModOptionsBase">
+        <defName>RCP_GenesRemoveXenotypes</defName>
+        <label>Remove Vanilla Xenotypes</label>
+        <order>100</order>
+    </ModSettingsFramework.ModOptionCategoryDef>
+</Defs>

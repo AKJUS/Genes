@@ -1,7 +1,10 @@
 <Patch>
-    <Operation Class="VFECore.PatchOperationToggableSequence">
-        <enabled>false</enabled>
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <defaultValue>false</defaultValue>
         <label>Normal body piggers</label>
+        <id>RCP_GenesPiggerBody</id>
+        <category>RCP_GenesPatches</category>
+        <order>60</order>
         <operations>
             <li Class="PatchOperationRemove">
                 <xpath>//XenotypeDef[defName="Pigskin"]/genes/li[text()="Body_Hulk"]</xpath>

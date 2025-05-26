@@ -1,7 +1,11 @@
 <Patch>
-	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>false</enabled>
-		<label>Remove impid</label>
+	<Operation Class="ModSettingsFramework.PatchOperationModOption">
+		<defaultValue>false</defaultValue>
+		<label>Remove Impid faction and pawns</label>
+		<tooltip>Prevents impid pawns from being created by the game. Doesn't remove them completely, so they can still be selected as starting pawns or edited in the xenotype editor. Also removes their faction.</tooltip>
+		<id>RCP_GenesRemoveImpid</id>
+		<category>RCP_GenesRemoveXenotypes</category>
+		<order>40</order>
 		<operations>
 			<li Class="PatchOperationRemove">
 				<xpath>//FactionDef[defName="TribeSavageImpid"] | //PawnKindDef[defaultFactionType/text()="TribeSavageImpid"] | //XenotypeDef/doubleXenotypeChances/Impid | //xenotypeSet/xenotypeChances/Impid</xpath>

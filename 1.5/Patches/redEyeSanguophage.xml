@@ -1,7 +1,10 @@
 <Patch>
-	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>true</enabled>
-		<label>Sanguophage have red eyes</label>
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <defaultValue>false</defaultValue>
+        <label>Sanguophage have red eyes</label>
+        <id>RCP_GenesRedEyeSanguophage</id>
+        <category>RCP_GenesPatches</category>
+        <order>10</order>
 		<operations>
 			<li Class="PatchOperationAdd">
 				<xpath>//XenotypeDef[defName="Sanguophage"]/genes</xpath>

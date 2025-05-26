@@ -1,7 +1,11 @@
 <Patch>
-	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>false</enabled>
-		<label>Remove neanderthal</label>
+	<Operation Class="ModSettingsFramework.PatchOperationModOption">
+		<defaultValue>false</defaultValue>
+		<label>Remove Neanderthal faction and pawns</label>
+		<tooltip>Prevents neanderthal pawns from being created by the game. Doesn't remove them completely, so they can still be selected as starting pawns or edited in the xenotype editor. Also removes their faction.</tooltip>
+		<id>RCP_GenesRemoveNeanderthal</id>
+		<category>RCP_GenesRemoveXenotypes</category>
+		<order>50</order>
 		<operations>
 			<li Class="PatchOperationRemove">
 				<xpath>//FactionDef[defName="TribeRoughNeanderthal"] | //XenotypeDef/doubleXenotypeChances/Neanderthal | //xenotypeSet/xenotypeChances/Neanderthal</xpath>

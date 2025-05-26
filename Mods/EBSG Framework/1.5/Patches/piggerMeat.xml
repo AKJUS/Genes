@@ -1,7 +1,11 @@
 <Patch>
-    <Operation Class="VFECore.PatchOperationToggableSequence">
-        <enabled>false</enabled>
-        <label>[EBSG Framework] Butchering piggers yields pork</label>
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <defaultValue>false</defaultValue>
+        <label>Butchering piggers yields pork</label>
+        <tooltip>Requires EBSG Framework. This option is only available with EBSG Framework installed.</tooltip>
+        <id>RCP_GenesPiggerMeat</id>
+        <category>RCP_GenesPatches</category>
+        <order>61</order>
         <operations>
             <li Class="PatchOperationAdd">
                 <xpath>//GeneDef[defName="VoicePig"]</xpath>

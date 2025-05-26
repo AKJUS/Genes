@@ -1,7 +1,11 @@
 <Patch>
-	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>true</enabled>
+	<Operation Class="ModSettingsFramework.PatchOperationModOption">
+		<defaultValue>false</defaultValue>
 		<label>Rework genetic aptitudes</label>
+		<tooltip>Great and awful skill genes now only offset the skill by 5 levels, down from 8. Strong and poor provide no skill offset, add or remove a passion, and are renamed to "{skill} interest" and {skill} apathy."</tooltip>
+		<id>RCP_GenesReworkAptitude</id>
+		<category>RCP_GenesPatches</category>
+		<order>0</order>
 		<operations>
 			<li Class="PatchOperationReplace">
 				<xpath>//GeneTemplateDef[defName="AptitudeTerrible"]/description/text()</xpath>
