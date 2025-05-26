@@ -1,15 +1,15 @@
 <Defs>
     <AbilityGroupDef>
-        <defName>CorePlus_Daily</defName>
+        <defName>RCP_Daily</defName>
         <cooldownTicks>60000</cooldownTicks>
     </AbilityGroupDef>
-    <AbilityDef Abstract="True" Name="CorePlus_SkillFocusAbility">
+    <AbilityDef Abstract="True" Name="RCP_SkillFocusAbility">
         <canUseAoeToGetTargets>false</canUseAoeToGetTargets>
         <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
         <cooldownTicksRange>60000</cooldownTicksRange>
         <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
         <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
-        <groupDef>CorePlus_Daily</groupDef>
+        <groupDef>RCP_Daily</groupDef>
         <hotKey>Misc12</hotKey>
         <jobDef>CastAbilityOnThing</jobDef>
         <sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>

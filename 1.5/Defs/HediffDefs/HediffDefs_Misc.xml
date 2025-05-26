@@ -1,5 +1,5 @@
 <Defs>
-    <HediffDef Abstract="True" Name="CorePlus_SkillFocusHediff">
+    <HediffDef Abstract="True" Name="RCP_SkillFocusHediff">
         <hediffClass>HediffWithComps</hediffClass>
         <defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
         <isBad>false</isBad>
