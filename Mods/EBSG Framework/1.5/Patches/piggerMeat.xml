@@ -8,7 +8,7 @@
         <order>61</order>
         <operations>
             <li Class="PatchOperationAdd">
-                <xpath>//GeneDef[defName="VoicePig"]</xpath>
+                <xpath>//GeneDef[defName="Nose_Pig"]</xpath>
                 <value>
                     <modExtensions>
                         <li Class="EBSGFramework.ButcherProductExtension">
