@@ -1,0 +1,21 @@
+<Patch>
+	<Operation Class="ModSettingsFramework.PatchOperationModOption">
+		<defaultValue>false</defaultValue>
+		<label>Remove Hussar from new pawn generation</label>
+		<tooltip>Prevents hussar pawns from being created by the game. Doesn't remove them completely, so they can still be selected as starting pawns or edited in the xenotype editor.</tooltip>
+		<id>RCP_GenesRemoveHussar</id>
+		<category>RCP_GenesRemoveXenotypes</category>
+		<order>30</order>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>//xenotypeSet/xenotypeChances/Hussar</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>//XenotypeDef[defName="Hussar"]</xpath>
+				<value>
+					<factionlessGenerationWeight>0</factionlessGenerationWeight>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

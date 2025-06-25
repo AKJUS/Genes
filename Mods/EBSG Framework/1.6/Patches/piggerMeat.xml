@@ -1,0 +1,23 @@
+<Patch>
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <defaultValue>false</defaultValue>
+        <label>Butchering piggers yields pork</label>
+        <tooltip>Requires EBSG Framework. This option is only available with EBSG Framework installed.</tooltip>
+        <id>RCP_GenesPiggerMeat</id>
+        <category>RCP_GenesPatches</category>
+        <order>61</order>
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>//GeneDef[defName="Nose_Pig"]</xpath>
+                <value>
+                    <modExtensions>
+                        <li Class="EBSGFramework.ButcherProductExtension">
+                            <meatReplacement>Meat_Pig</meatReplacement>
+                            <leatherReplacement>Leather_Pig</leatherReplacement>
+                        </li>
+                    </modExtensions>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

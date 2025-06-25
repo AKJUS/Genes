@@ -5,4 +5,10 @@
         <li IfModActive="Ludeon.Rimworld.Royalty">DLC/Royalty/1.5</li>
         <li IfModActive="ebsg.framework">Mods/EBSG Framework/1.5</li>
     </v1.5>
+    <v1.6>
+        <li>/</li>
+        <li>1.6</li>
+        <li IfModActive="Ludeon.Rimworld.Royalty">DLC/Royalty/1.6</li>
+        <li IfModActive="ebsg.framework">Mods/EBSG Framework/1.6</li>
+    </v1.6>
 </loadFolders>

@@ -1,0 +1,21 @@
+<Patch>
+	<Operation Class="ModSettingsFramework.PatchOperationModOption">
+		<defaultValue>false</defaultValue>
+		<label>Remove Pigskin faction and pawns</label>
+		<tooltip>Prevents piggers from being created by the game. Doesn't remove them completely, so they can still be selected as starting pawns or edited in the xenotype editor. Also removes their faction.</tooltip>
+		<id>RCP_GenesRemovePiggers</id>
+		<category>RCP_GenesRemoveXenotypes</category>
+		<order>60</order>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>//FactionDef[defName="OutlanderRoughPig"] | //PawnKindDef[defaultFactionType/text()="OutlanderRoughPig"] | //XenotypeDef/doubleXenotypeChances/Pigskin | //xenotypeSet/xenotypeChances/Pigskin</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>//XenotypeDef[defName="Pigskin"]</xpath>
+				<value>
+					<factionlessGenerationWeight>0</factionlessGenerationWeight>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>
