@@ -1,18 +1,16 @@
 <Patch>
-    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+    <Operation Class="XmlExtensions.OptionalPatch">
+        <modId>RCP.Genes</modId>
+        <key>piggerBody</key>
         <defaultValue>false</defaultValue>
-        <label>Normal body piggers</label>
-        <id>RCP_GenesPiggerBody</id>
-        <category>RCP_GenesPatches</category>
-        <order>60</order>
-        <operations>
-            <li Class="PatchOperationRemove">
+        <caseTrue>
+            <Operation Class="PatchOperationRemove">
                 <xpath>//XenotypeDef[defName="Pigskin"]/genes/li[text()="Body_Hulk"]</xpath>
-            </li>
-            <li Class="PatchOperationReplace">
+            </Operation>
+            <Operation Class="PatchOperationReplace">
                 <xpath>//XenotypeDef[defName="Pigskin"]/genes/li[text()="Body_Fat"]/text()</xpath>
                 <value>Body_Standard</value>
-            </li>
-        </operations>
+            </Operation>
+        </caseTrue>
     </Operation>
 </Patch>

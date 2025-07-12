@@ -1,21 +1,18 @@
 <Patch>
-    <Operation Class="ModSettingsFramework.PatchOperationModOption">
-        <defaultValue>false</defaultValue>
-        <label>Remove Genie from new pawn generation</label>
-        <tooltip>Prevents genie pawns from being created by the game. Doesn't remove them completely, so they can still be selected as starting pawns or edited in the xenotype editor.</tooltip>
-        <id>RCP_GenesRemoveGenie</id>
-        <category>RCP_GenesRemoveXenotypes</category>
-        <order>10</order>
-		<operations>
-			<li Class="PatchOperationRemove">
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>RCP.Genes</modId>
+		<key>removeGenie</key>
+		<defaultValue>false</defaultValue>
+		<caseTrue>
+			<Operation Class="PatchOperationRemove">
 				<xpath>//xenotypeSet/xenotypeChances/Genie</xpath>
-			</li>
-			<li Class="PatchOperationAdd">
+			</Operation>
+			<Operation Class="PatchOperationAdd">
 				<xpath>//XenotypeDef[defName="Genie"]</xpath>
 				<value>
 					<factionlessGenerationWeight>0</factionlessGenerationWeight>
 				</value>
-			</li>
-		</operations>
+			</Operation>
+		</caseTrue>
 	</Operation>
 </Patch>

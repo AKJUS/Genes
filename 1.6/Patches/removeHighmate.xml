@@ -1,21 +1,18 @@
 <Patch>
-	<Operation Class="ModSettingsFramework.PatchOperationModOption">
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>RCP.Genes</modId>
+		<key>removeHighmate</key>
 		<defaultValue>false</defaultValue>
-		<label>Remove Highmate from new pawn generation</label>
-		<tooltip>Prevents highmate pawns from being created by the game. Doesn't remove them completely, so they can still be selected as starting pawns or edited in the xenotype editor.</tooltip>
-		<id>RCP_GenesRemoveHighmate</id>
-		<category>RCP_GenesRemoveXenotypes</category>
-		<order>20</order>
-		<operations>
-			<li Class="PatchOperationRemove">
+		<caseTrue>
+			<Operation Class="PatchOperationRemove">
 				<xpath>//xenotypeSet/xenotypeChances/Highmate</xpath>
-			</li>
-			<li Class="PatchOperationAdd">
+			</Operation>
+			<Operation Class="PatchOperationAdd">
 				<xpath>//XenotypeDef[defName="Highmate"]</xpath>
 				<value>
 					<factionlessGenerationWeight>0</factionlessGenerationWeight>
 				</value>
-			</li>
-		</operations>
+			</Operation>
+		</caseTrue>
 	</Operation>
 </Patch>
