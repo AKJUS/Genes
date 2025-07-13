@@ -1,13 +1,10 @@
 <Patch>
-    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+    <Operation Class="XmlExtensions.OptionalPatch">
+        <modId>RCP.Empire</modId>
+        <key>RCPGenesPiggerMeat</key>
         <defaultValue>false</defaultValue>
-        <label>Butchering piggers yields pork</label>
-        <tooltip>Requires EBSG Framework. This option is only available with EBSG Framework installed.</tooltip>
-        <id>RCP_GenesPiggerMeat</id>
-        <category>RCP_GenesPatches</category>
-        <order>61</order>
-        <operations>
-            <li Class="PatchOperationAdd">
+        <caseTrue>
+            <Operation Class="PatchOperationAdd">
                 <xpath>//GeneDef[defName="Nose_Pig"]</xpath>
                 <value>
                     <modExtensions>
@@ -17,7 +14,7 @@
                         </li>
                     </modExtensions>
                 </value>
-            </li>
-        </operations>
+            </Operation>
+        </caseTrue>
     </Operation>
 </Patch>

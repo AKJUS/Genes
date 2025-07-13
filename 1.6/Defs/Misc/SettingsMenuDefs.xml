@@ -14,7 +14,12 @@
                 <defaultValue>false</defaultValue>
                 <tooltip>Removes the forced fat and hulk bodies from Pigskins and replaces them with normal bodies.</tooltip>
             </li>
-            <li Class="XmlExtensions.Setting.GapLine" />
+            <li MayRequire="ebsg.framework" Class="XmlExtensions.Setting.Checkbox">
+                <key>RCPGenesPiggerMeat</key>
+                <label>Butchering piggers yields pork</label>
+                <defaultValue>false</defaultValue>
+                <tooltip>Requires EBSG Framework. This option is only available with EBSG Framework installed.</tooltip>
+            </li>
             <li Class="XmlExtensions.Setting.Text">
                 <anchor>Middle</anchor>
                 <text>Remove Vanilla Xenotypes</text>
