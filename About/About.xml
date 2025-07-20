@@ -14,14 +14,6 @@
 		</li>
 	</modDependencies>
 	<modDependenciesByVersion>
-		<v1.5>
-			<li>
-				<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
-				<displayName>Vanilla Expanded Framework</displayName>
-				<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2023507013</steamWorkshopUrl>
-				<downloadUrl>https://github.com/Vanilla-Expanded/VanillaExpandedFramework</downloadUrl>
-			</li>
-		</v1.5>
 		<v1.6>
 			<li>
 				<packageId>imranfish.xmlextensions</packageId>
@@ -34,7 +26,7 @@
 	<loadAfter>
 		<li>dankpyon.medieval.overhaul</li>
 		<li>ebsg.framework</li>
+		<li>imranfish.xmlextensions</li>
 		<li>jintuzilamian.gene.xenocosmetic</li>
-		<li>oskarpotocki.vanillafactionsexpanded.core</li>
 	</loadAfter>
 </ModMetaData>

@@ -8,13 +8,16 @@
 [badge-dlc-biotech]: https://img.shields.io/badge/DLC-Biotech-mediumturquoise
 <!--![Supports Anomaly][badge-dlc-anomaly] supports Anomaly DLC-->
 [badge-dlc-anomaly]: https://img.shields.io/badge/DLC-Anomaly-darkseagreen
+<!--![Supports Odyssey][badge-dlc-odyssey] supports Odyssey DLC-->
+[badge-dlc-odyssey]: https://img.shields.io/badge/DLC-Odyssey-mediumpurple
 
 # [RCP] Genes
 ![](About/Preview.png)\
 [![GPLv3][badge-license]](https://www.gnu.org/licenses/gpl-3.0) ![Supports Biotech][badge-dlc-biotech]
 
 > [!IMPORTANT]
-> Requires [Vanilla Expanded Framework](https://steamcommunity.com/sharedfiles/filedetails/?id=2023507013).
+> Requires [RimWorld Biotech](https://store.steampowered.com/app/1826140/RimWorld__Biotech/).\
+> Requires [XML Extensions](https://steamcommunity.com/sharedfiles/filedetails/?id=2574315206).
 
 Skill frenzies added by submodules like [Dirtmole](https://github.com/RimCorePlus/Genes-Dirtmole) have a mild incompatibility with Enhanced Beliefs, which spams harmless red errors when joy is disabled for a human pawn.
 
