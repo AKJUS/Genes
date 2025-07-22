@@ -48,10 +48,6 @@
                     <iconPath>UI/Icons/Genes/Gene_FemaleOnly</iconPath>
                     <displayCategory>Miscellaneous</displayCategory>
                     <displayOrderInCategory>9999</displayOrderInCategory>
-                    <forcedHeadTypes>
-                        <li>Female_AverageNormal</li>
-                        <li>Female_AveragePointy</li>
-                    </forcedHeadTypes>
                     <geneClass>EBSGFramework.HediffAdder</geneClass>
                     <modExtensions>
                         <li Class="EBSGFramework.EBSGExtension">
