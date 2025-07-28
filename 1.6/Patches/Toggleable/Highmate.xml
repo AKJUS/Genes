@@ -15,4 +15,33 @@
 			</Operation>
 		</caseTrue>
 	</Operation>
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>RCP.Genes</modId>
+		<key>reworkHighmate</key>
+		<defaultValue>false</defaultValue>
+		<caseTrue>
+			<Operation Class="PatchOperationRemove">
+				<xpath>//XenotypeDef[defName="Highmate"]/genes/li[text()="ViolenceDisabled"]</xpath>
+			</Operation>
+			<Operation Class="PatchOperationAdd">
+				<xpath>//XenotypeDef[defName="Highmate"]/genes</xpath>
+				<value>
+					<li>Aggression_DeadCalm</li>
+					<li>AptitudeTerrible_Melee</li>
+					<li>AptitudeTerrible_Shooting</li>
+					<li>MeleeDamage_Weak</li>
+				</value>
+			</Operation>
+		</caseTrue>
+	</Operation>
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>RCP.Genes</modId>
+		<key>highmateBody</key>
+		<defaultValue>false</defaultValue>
+		<caseTrue>
+			<Operation Class="PatchOperationRemove">
+				<xpath>//XenotypeDef[defName="Highmate"]/genes/li[text()="Body_Thin"]</xpath>
+			</Operation>
+		</caseTrue>
+	</Operation>
 </Patch>

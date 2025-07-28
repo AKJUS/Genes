@@ -37,17 +37,43 @@
                                 <text>All settings require a restart.</text>
                             </li>
                             <li Class="XmlExtensions.Setting.Gap" />
+                            <li Class="XmlExtensions.Setting.Text">
+                                <anchor>Middle</anchor>
+                                <text>Highmates</text>
+                            </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>piggerBody</key>
-                                <label>Normal Body Piggers</label>
+                                <key>reworkHighmate</key>
+                                <label>Highmates Are Capable of Violence</label>
                                 <defaultValue>false</defaultValue>
-                                <tooltip>Removes the forced fat and hulk bodies from Pigskins and replaces them with normal bodies.</tooltip>
+                                <tooltip>Removes the violence disabled gene and replaced it with dead calm, terrible melee, terrible shooting, and weak melee.</tooltip>
+                            </li>
+                            <li MayRequire="jintuzilamian.gene.xenocosmetic" Class="XmlExtensions.Setting.Checkbox">
+                                <key>lovelyHighmates</key>
+                                <label>Lovely Feline Highmates</label>
+                                <defaultValue>false</defaultValue>
+                                <tooltip>Adds the lovely cat ears and tail genes from AFU Cosmetic Gene Expanded to highmates.</tooltip>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>highmateBody</key>
+                                <label>Standard Body Highmates</label>
+                                <defaultValue>false</defaultValue>
+                                <tooltip>Removes the thin body gene from highmates so they only generate with standard bodies.</tooltip>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Text">
+                                <anchor>Middle</anchor>
+                                <text>Piggers</text>
                             </li>
                             <li MayRequire="ebsg.framework" Class="XmlExtensions.Setting.Checkbox">
                                 <key>RCPGenesPiggerMeat</key>
                                 <label>Butchering Piggers Yields Pork</label>
                                 <defaultValue>false</defaultValue>
                                 <tooltip>Requires EBSG Framework. This option is only available with EBSG Framework installed.</tooltip>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>piggerBody</key>
+                                <label>Standard Body Piggers</label>
+                                <defaultValue>false</defaultValue>
+                                <tooltip>Removes the forced fat and hulk bodies from Pigskins and replaces them with standard bodies.</tooltip>
                             </li>
                         </settings>
                     </li>

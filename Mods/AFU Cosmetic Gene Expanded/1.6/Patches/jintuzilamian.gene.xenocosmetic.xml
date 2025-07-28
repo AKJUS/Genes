@@ -1,0 +1,16 @@
+<Patch>
+    <Operation Class="XmlExtensions.OptionalPatch">
+        <modId>RCP.Genes</modId>
+        <key>lovelyHighmates</key>
+        <defaultValue>false</defaultValue>
+        <caseTrue>
+            <Operation Class="PatchOperationAdd">
+                <xpath>//XenotypeDef[defName="Highmate"]/genes</xpath>
+                <value>
+                    <li>AFU_BA_LovelyCatTail</li>
+                    <li>AFU_HA_LoverlyCatEar</li>
+                </value>
+            </Operation>
+        </caseTrue>
+    </Operation>
+</Patch>
