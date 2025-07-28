@@ -1,0 +1,418 @@
+<Defs>
+
+    <!-- Category -->
+
+    <GeneCategoryDef>
+        <defName>RCP_HairColor</defName>
+        <label>cosmetic - hair (extras)</label>
+        <displayPriorityInXenotype>284</displayPriorityInXenotype>
+    </GeneCategoryDef>
+
+    <GeneDef ParentName="GeneHairColorBase" Name="RCP_HairColorBase" Abstract="True">
+        <displayCategory>RCP_HairColor</displayCategory>
+        <selectionWeight>0</selectionWeight>
+    </GeneDef>
+
+    <!-- Reds -->
+
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Red_Hair</defName>
+        <label>red hair</label>
+        <hairColorOverride>(118, 49, 57)</hairColorOverride>
+        <displayOrderInCategory>9937</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Subtle_Red_Hair</defName>
+        <label>subtle red hair</label>
+        <hairColorOverride>(132, 84, 72)</hairColorOverride>
+        <displayOrderInCategory>9938</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Auburn_Hair</defName>
+        <label>auburn hair</label>
+        <hairColorOverride>(138, 51, 36)</hairColorOverride>
+        <displayOrderInCategory>9939</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Scarlet_Hair</defName>
+        <label>scarlet hair</label>
+        <hairColorOverride>(163, 41, 42)</hairColorOverride>
+        <displayOrderInCategory>9940</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Burgundy_Hair</defName>
+        <label>burgundy hair</label>
+        <hairColorOverride>(91, 41, 45)</hairColorOverride>
+        <displayOrderInCategory>9941</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Plum_Hair</defName>
+        <label>plum hair</label>
+        <hairColorOverride>(90, 38, 60)</hairColorOverride>
+        <displayOrderInCategory>9942</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Dark_Mauve_Hair</defName>
+        <label>dark mauve hair</label>
+        <hairColorOverride>(131, 78, 101)</hairColorOverride>
+        <displayOrderInCategory>9943</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Magenta_Hair</defName>
+        <label>magenta hair</label>
+        <hairColorOverride>(119, 50, 80)</hairColorOverride>
+        <displayOrderInCategory>9944</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Subtle_Magenta_Hair</defName>
+        <label>subtle magenta hair</label>
+        <hairColorOverride>(101, 67, 82)</hairColorOverride>
+        <displayOrderInCategory>9945</displayOrderInCategory>
+    </GeneDef>
+
+    <!-- Purples -->
+
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Purple_Hair</defName>
+        <label>purple hair</label>
+        <hairColorOverride>(99, 50, 119)</hairColorOverride>
+        <displayOrderInCategory>9946</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Subtle_Purple_Hair</defName>
+        <label>subtle purple hair</label>
+        <hairColorOverride>(90, 72, 97)</hairColorOverride>
+        <displayOrderInCategory>9947</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Muted_Purple_Hair</defName>
+        <label>muted purple hair</label>
+        <hairColorOverride>(116, 78, 131)</hairColorOverride>
+        <displayOrderInCategory>9948</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Deep_Purple_Hair</defName>
+        <label>deep purple hair</label>
+        <hairColorOverride>(75, 38, 90)</hairColorOverride>
+        <displayOrderInCategory>9949</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Grape_Hair</defName>
+        <label>grape hair</label>
+        <hairColorOverride>(108, 52, 97)</hairColorOverride>
+        <displayOrderInCategory>9950</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Indigo_Hair</defName>
+        <label>indigo hair</label>
+        <hairColorOverride>(125, 73, 125)</hairColorOverride>
+        <displayOrderInCategory>9951</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Light_Indigo_Hair</defName>
+        <label>light indigo hair</label>
+        <hairColorOverride>(144, 86, 139)</hairColorOverride>
+        <displayOrderInCategory>9952</displayOrderInCategory>
+    </GeneDef>
+
+    <!-- Blues -->
+
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Blue_Hair</defName>
+        <label>blue hair</label>
+        <hairColorOverride>(24, 65, 121)</hairColorOverride>
+        <displayOrderInCategory>9953</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Subtle_Blue_Hair</defName>
+        <label>subtle blue hair</label>
+        <hairColorOverride>(67, 81, 101)</hairColorOverride>
+        <displayOrderInCategory>9954</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Ice_Blue_Hair</defName>
+        <label>ice blue hair</label>
+        <hairColorOverride>(140, 148, 174)</hairColorOverride>
+        <displayOrderInCategory>9955</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Marine_Hair</defName>
+        <label>marine hair</label>
+        <hairColorOverride>(38, 59, 90)</hairColorOverride>
+        <displayOrderInCategory>9956</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Sky_Blue_Hair</defName>
+        <label>sky blue hair</label>
+        <hairColorOverride>(95, 133, 191)</hairColorOverride>
+        <displayOrderInCategory>9957</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Dusk_Hair</defName>
+        <label>dusk hair</label>
+        <hairColorOverride>(78, 100, 131)</hairColorOverride>
+        <displayOrderInCategory>9958</displayOrderInCategory>
+    </GeneDef>
+
+    <!-- Blue-greens -->
+
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Moss_Hair</defName>
+        <label>moss hair</label>
+        <hairColorOverride>(38, 89, 90)</hairColorOverride>
+        <displayOrderInCategory>9959</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Bright_Moss_Hair</defName>
+        <label>bright moss hair</label>
+        <hairColorOverride>(78, 130, 131)</hairColorOverride>
+        <displayOrderInCategory>9960</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Teal_Hair</defName>
+        <label>teal hair</label>
+        <hairColorOverride>(50, 118, 119)</hairColorOverride>
+        <displayOrderInCategory>9961</displayOrderInCategory>
+    </GeneDef>
+
+    <!-- Greens -->
+
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Green_Hair</defName>
+        <label>green hair</label>
+        <hairColorOverride>(89, 105, 62)</hairColorOverride>
+        <displayOrderInCategory>9962</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Sage_Hair</defName>
+        <label>sage hair</label>
+        <hairColorOverride>(74, 110, 80)</hairColorOverride>
+        <displayOrderInCategory>9963</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Faded_Green_Hair</defName>
+        <label>faded green hair</label>
+        <hairColorOverride>(86, 93, 76)</hairColorOverride>
+        <displayOrderInCategory>9964</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Forest_Green_Hair</defName>
+        <label>forest green hair</label>
+        <hairColorOverride>(78, 131, 105)</hairColorOverride>
+        <displayOrderInCategory>9965</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Pine_Green_Hair</defName>
+        <label>pine green hair</label>
+        <hairColorOverride>(38, 90, 64)</hairColorOverride>
+        <displayOrderInCategory>9966</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Swamp_Green_Hair</defName>
+        <label>swamp green hair</label>
+        <hairColorOverride>(112, 131, 78)</hairColorOverride>
+        <displayOrderInCategory>9967</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Muddy_Green_Hair</defName>
+        <label>muddy green hair</label>
+        <hairColorOverride>(96, 97, 72)</hairColorOverride>
+        <displayOrderInCategory>9968</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Marsh_Green_Hair</defName>
+        <label>marsh green hair</label>
+        <hairColorOverride>(130, 131, 78)</hairColorOverride>
+        <displayOrderInCategory>9969</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Viridian_Hair</defName>
+        <label>viridian hair</label>
+        <hairColorOverride>(50, 119, 84)</hairColorOverride>
+        <displayOrderInCategory>9970</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Subtle_Viridian_Hair</defName>
+        <label>subtle viridian hair</label>
+        <hairColorOverride>(74, 94, 84)</hairColorOverride>
+        <displayOrderInCategory>9971</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Olive_Hair</defName>
+        <label>olive hair</label>
+        <hairColorOverride>(118, 119, 50)</hairColorOverride>
+        <displayOrderInCategory>9972</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Dark_Olive_Hair</defName>
+        <label>dark olive hair</label>
+        <hairColorOverride>(69, 88, 36)</hairColorOverride>
+        <displayOrderInCategory>9973</displayOrderInCategory>
+    </GeneDef>
+
+    <!-- Yellow-browns -->
+
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Mustard_Hair</defName>
+        <label>mustard hair</label>
+        <hairColorOverride>(163, 131, 49)</hairColorOverride>
+        <displayOrderInCategory>9974</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Pale_Lime_Hair</defName>
+        <label>pale lime hair</label>
+        <hairColorOverride>(166, 166, 90)</hairColorOverride>
+        <displayOrderInCategory>9975</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Faded_Brown_Hair</defName>
+        <label>faded brown hair</label>
+        <hairColorOverride>(86, 76, 57)</hairColorOverride>
+        <displayOrderInCategory>9976</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Subtle_Brown_Hair</defName>
+        <label>subtle brown hair</label>
+        <hairColorOverride>(101, 88, 67)</hairColorOverride>
+        <displayOrderInCategory>9977</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Light_Brown_Hair</defName>
+        <label>light brown hair</label>
+        <hairColorOverride>(131, 110, 78)</hairColorOverride>
+        <displayOrderInCategory>9978</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Dark_Brown_Hair</defName>
+        <label>dark brown hair</label>
+        <hairColorOverride>(90, 69, 38)</hairColorOverride>
+        <displayOrderInCategory>9979</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Dirt_Brown_Hair</defName>
+        <label>dirt brown hair</label>
+        <hairColorOverride>(119, 91, 50)</hairColorOverride>
+        <displayOrderInCategory>9980</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Burnt_Umber_Hair</defName>
+        <label>burnt umber hair</label>
+        <hairColorOverride>(90, 58, 32)</hairColorOverride>
+        <displayOrderInCategory>9981</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Wood_Brown_Hair</defName>
+        <label>wood brown hair</label>
+        <hairColorOverride>(108, 78, 55)</hairColorOverride>
+        <displayOrderInCategory>9982</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Orange_Hair</defName>
+        <label>orange hair</label>
+        <hairColorOverride>(167, 96, 39)</hairColorOverride>
+        <displayOrderInCategory>9983</displayOrderInCategory>
+    </GeneDef>
+
+    <!-- Pastels -->
+
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Pastel_Red_Hair</defName>
+        <label>pastel red hair</label>
+        <hairColorOverride>(201, 112, 112)</hairColorOverride>
+        <displayOrderInCategory>9984</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Pastel_Pink_Hair</defName>
+        <label>pastel pink hair</label>
+        <hairColorOverride>(241, 192, 218)</hairColorOverride>
+        <displayOrderInCategory>9985</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Pastel_Blue_Hair</defName>
+        <label>pastel blue hair</label>
+        <hairColorOverride>(126, 164, 204)</hairColorOverride>
+        <displayOrderInCategory>9986</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Pastel_Green_Hair</defName>
+        <label>pastel green hair</label>
+        <hairColorOverride>(161, 213, 180)</hairColorOverride>
+        <displayOrderInCategory>9987</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Pastel_Yellow_Hair</defName>
+        <label>pastel yellow hair</label>
+        <hairColorOverride>(204, 204, 100)</hairColorOverride>
+        <displayOrderInCategory>9988</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Pastel_Orange_Hair</defName>
+        <label>pastel orange hair</label>
+        <hairColorOverride>(191, 137, 33)</hairColorOverride>
+        <displayOrderInCategory>9989</displayOrderInCategory>
+    </GeneDef>
+
+    <!-- Monochrome and near-monochrome -->
+
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_White_Hair</defName>
+        <label>white hair</label>
+        <hairColorOverride>(184, 184, 184)</hairColorOverride>
+        <displayOrderInCategory>9990</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Cream_Hair</defName>
+        <label>cream hair</label>
+        <hairColorOverride>(195, 192, 176)</hairColorOverride>
+        <displayOrderInCategory>9991</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Light_Gray_Hair</defName>
+        <label>light gray hair</label>
+        <hairColorOverride>(166, 166, 166)</hairColorOverride>
+        <displayOrderInCategory>9992</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Limestone_Hair</defName>
+        <label>limestone hair</label>
+        <hairColorOverride>(158, 153, 135)</hairColorOverride>
+        <displayOrderInCategory>9993</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Marble_Hair</defName>
+        <label>marble hair</label>
+        <hairColorOverride>(132, 135, 132)</hairColorOverride>
+        <displayOrderInCategory>9994</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Sandstone_Hair</defName>
+        <label>sandstone hair</label>
+        <hairColorOverride>(126, 104, 94)</hairColorOverride>
+        <displayOrderInCategory>9995</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Granite_Hair</defName>
+        <label>granite hair</label>
+        <hairColorOverride>(105, 95, 97)</hairColorOverride>
+        <displayOrderInCategory>9996</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Dark_Grey_Hair</defName>
+        <label>dark grey hair</label>
+        <hairColorOverride>(81, 81, 81)</hairColorOverride>
+        <displayOrderInCategory>9997</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Slate_Hair</defName>
+        <label>slate hair</label>
+        <hairColorOverride>(70, 70, 70)</hairColorOverride>
+        <displayOrderInCategory>9998</displayOrderInCategory>
+    </GeneDef>
+    <GeneDef ParentName="RCP_HairColorBase">
+        <defName>RCP_Black_Hair</defName>
+        <label>black hair</label>
+        <hairColorOverride>(60, 60, 60)</hairColorOverride>
+        <displayOrderInCategory>9999</displayOrderInCategory>
+    </GeneDef>
+
+</Defs>

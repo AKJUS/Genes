@@ -3,81 +3,120 @@
         <modId>RCP.Genes</modId>
         <label>(RCP) Genes</label>
         <settings>
-            <li Class="XmlExtensions.Setting.Text">
-                <anchor>Middle</anchor>
-                <text>Misc</text>
-                <tKey>RCPGenesMisc</tKey>
-            </li>
-            <li Class="XmlExtensions.Setting.Checkbox">
-                <key>piggerBody</key>
-                <label>Normal body piggers</label>
-                <defaultValue>false</defaultValue>
-                <tooltip>Removes the forced fat and hulk bodies from Pigskins and replaces them with normal bodies.</tooltip>
-            </li>
-            <li MayRequire="ebsg.framework" Class="XmlExtensions.Setting.Checkbox">
-                <key>RCPGenesPiggerMeat</key>
-                <label>Butchering piggers yields pork</label>
-                <defaultValue>false</defaultValue>
-                <tooltip>Requires EBSG Framework. This option is only available with EBSG Framework installed.</tooltip>
-            </li>
-            <li Class="XmlExtensions.Setting.Text">
-                <anchor>Middle</anchor>
-                <text>Remove Vanilla Xenotypes</text>
-                <tKey>RCPGenesRemoveXenotypes</tKey>
-            </li>
-            <li Class="XmlExtensions.Setting.Checkbox">
-                <key>removeDirtmole</key>
-                <label>Remove Dirtmole from new pawn generation</label>
-                <defaultValue>false</defaultValue>
-                <tooltip>Prevents dirtmole pawns from being created by the game. Doesn't remove them completely, so they can still be selected as starting pawns or edited in the xenotype editor.</tooltip>
-            </li>
-            <li Class="XmlExtensions.Setting.Checkbox">
-                <key>removeGenie</key>
-                <label>Remove Genie from new pawn generation</label>
-                <defaultValue>false</defaultValue>
-                <tooltip>Prevents genie pawns from being created by the game. Doesn't remove them completely, so they can still be selected as starting pawns or edited in the xenotype editor.</tooltip>
-            </li>
-            <li Class="XmlExtensions.Setting.Checkbox">
-                <key>removeHighmate</key>
-                <label>Remove Highmate from new pawn generation</label>
-                <defaultValue>false</defaultValue>
-                <tooltip>Prevents highmate pawns from being created by the game. Doesn't remove them completely, so they can still be selected as starting pawns or edited in the xenotype editor.</tooltip>
-            </li>
-            <li Class="XmlExtensions.Setting.Checkbox">
-                <key>removeHussar</key>
-                <label>Remove Hussar from new pawn generation</label>
-                <defaultValue>false</defaultValue>
-                <tooltip>Prevents hussar pawns from being created by the game. Doesn't remove them completely, so they can still be selected as starting pawns or edited in the xenotype editor.</tooltip>
-            </li>
-            <li Class="XmlExtensions.Setting.Checkbox">
-                <key>removeImpid</key>
-                <label>Remove Impid faction and pawns</label>
-                <defaultValue>false</defaultValue>
-                <tooltip>Prevents impid pawns from being created by the game. Doesn't remove them completely, so they can still be selected as starting pawns or edited in the xenotype editor. Also removes their faction.</tooltip>
-            </li>
-            <li Class="XmlExtensions.Setting.Checkbox">
-                <key>removeNeanderthal</key>
-                <label>Remove Neanderthal faction and pawns</label>
-                <defaultValue>false</defaultValue>
-                <tooltip>Prevents neanderthal pawns from being created by the game. Doesn't remove them completely, so they can still be selected as starting pawns or edited in the xenotype editor. Also removes their faction.</tooltip>
-            </li>
-            <li Class="XmlExtensions.Setting.Checkbox">
-                <key>removePigskin</key>
-                <label>Remove Pigskin faction and pawns</label>
-                <defaultValue>false</defaultValue>
-                <tooltip>Prevents piggers from being created by the game. Doesn't remove them completely, so they can still be selected as starting pawns or edited in the xenotype editor. Also removes their faction.</tooltip>
-            </li>
-            <li Class="XmlExtensions.Setting.Checkbox">
-                <key>removeWaster</key>
-                <label>Remove Waster faction and pawns</label>
-                <defaultValue>false</defaultValue>
-                <tooltip>Prevents wasters from being created by the game. Doesn't remove them completely, so they can still be selected as starting pawns or edited in the xenotype editor. Also removes their faction.</tooltip>
-            </li>
-            <li Class="XmlExtensions.Setting.Checkbox">
-                <key>removeYttakin</key>
-                <label>Remove Yttakin faction and pawns</label>
-                <defaultValue>false</defaultValue>
-                <tooltip>Prevents yttakin pawns from being created by the game. Doesn't remove them completely, so they can still be selected as starting pawns or edited in the xenotype editor. Also removes their faction.</tooltip>
+            <li Class="XmlExtensions.Setting.TabView">
+                <tabs>
+                    <li>
+                        <label>Settings</label>
+                        <settings>
+                            <li Class="XmlExtensions.Setting.Gap" />
+                            <li Class="XmlExtensions.Setting.Text">
+                                <anchor>Middle</anchor>
+                                <text>All settings require a restart.</text>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Gap" />
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>RCP_AnimeHair</key>
+                                <label>Anime Hair Color Variety</label>
+                                <defaultValue>false</defaultValue>
+                                <tooltip>Adjusts the commonality of hair color genes so colors like teal are more common. With this mod's hair colors active, a total of 81 hair colors will be in the rotation. Realistic hair colors are still favored, but to a 5:1 ratio instead of the vanilla 20:1.</tooltip>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>RCP_RemoveAllHair</key>
+                                <label>Remove Extra Hair Colors</label>
+                                <defaultValue>false</defaultValue>
+                                <tooltip>Removes all hair colors added by this mod.</tooltip>
+                            </li>
+                        </settings>
+                    </li>
+                    <li>
+                        <label>Tweaks</label>
+                        <settings>
+                            <li Class="XmlExtensions.Setting.Gap" />
+                            <li Class="XmlExtensions.Setting.Text">
+                                <anchor>Middle</anchor>
+                                <text>All settings require a restart.</text>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Gap" />
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>piggerBody</key>
+                                <label>Normal Body Piggers</label>
+                                <defaultValue>false</defaultValue>
+                                <tooltip>Removes the forced fat and hulk bodies from Pigskins and replaces them with normal bodies.</tooltip>
+                            </li>
+                            <li MayRequire="ebsg.framework" Class="XmlExtensions.Setting.Checkbox">
+                                <key>RCPGenesPiggerMeat</key>
+                                <label>Butchering Piggers Yields Pork</label>
+                                <defaultValue>false</defaultValue>
+                                <tooltip>Requires EBSG Framework. This option is only available with EBSG Framework installed.</tooltip>
+                            </li>
+                        </settings>
+                    </li>
+                    <li>
+                        <label>Remove Xenotypes</label>
+                        <settings>
+                            <li Class="XmlExtensions.Setting.Gap" />
+                            <li Class="XmlExtensions.Setting.Text">
+                                <anchor>Middle</anchor>
+                                <text>All settings require a restart.</text>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Gap" />
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>removeDirtmole</key>
+                                <label>Remove Dirtmole From New Pawn Generation</label>
+                                <defaultValue>false</defaultValue>
+                                <tooltip>Prevents dirtmole pawns from being created by the game. Doesn't remove them completely, so they can still be selected as starting pawns or edited in the xenotype editor.</tooltip>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>removeGenie</key>
+                                <label>Remove Genie From New Pawn Generation</label>
+                                <defaultValue>false</defaultValue>
+                                <tooltip>Prevents genie pawns from being created by the game. Doesn't remove them completely, so they can still be selected as starting pawns or edited in the xenotype editor.</tooltip>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>removeHighmate</key>
+                                <label>Remove Highmate From New Pawn Generation</label>
+                                <defaultValue>false</defaultValue>
+                                <tooltip>Prevents highmate pawns from being created by the game. Doesn't remove them completely, so they can still be selected as starting pawns or edited in the xenotype editor.</tooltip>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>removeHussar</key>
+                                <label>Remove Hussar From New Pawn Generation</label>
+                                <defaultValue>false</defaultValue>
+                                <tooltip>Prevents hussar pawns from being created by the game. Doesn't remove them completely, so they can still be selected as starting pawns or edited in the xenotype editor.</tooltip>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>removeImpid</key>
+                                <label>Remove Impid Faction and Pawns</label>
+                                <defaultValue>false</defaultValue>
+                                <tooltip>Prevents impid pawns from being created by the game. Doesn't remove them completely, so they can still be selected as starting pawns or edited in the xenotype editor. Also removes their faction.</tooltip>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>removeNeanderthal</key>
+                                <label>Remove Neanderthal Faction and Pawns</label>
+                                <defaultValue>false</defaultValue>
+                                <tooltip>Prevents neanderthal pawns from being created by the game. Doesn't remove them completely, so they can still be selected as starting pawns or edited in the xenotype editor. Also removes their faction.</tooltip>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>removePigskin</key>
+                                <label>Remove Pigskin Faction and Pawns</label>
+                                <defaultValue>false</defaultValue>
+                                <tooltip>Prevents piggers from being created by the game. Doesn't remove them completely, so they can still be selected as starting pawns or edited in the xenotype editor. Also removes their faction.</tooltip>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>removeWaster</key>
+                                <label>Remove Waster Faction and Pawns</label>
+                                <defaultValue>false</defaultValue>
+                                <tooltip>Prevents wasters from being created by the game. Doesn't remove them completely, so they can still be selected as starting pawns or edited in the xenotype editor. Also removes their faction.</tooltip>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>removeYttakin</key>
+                                <label>Remove Yttakin Faction and Pawns</label>
+                                <defaultValue>false</defaultValue>
+                                <tooltip>Prevents yttakin pawns from being created by the game. Doesn't remove them completely, so they can still be selected as starting pawns or edited in the xenotype editor. Also removes their faction.</tooltip>
+                            </li>
+                        </settings>
+                    </li>
+                </tabs>
             </li>
         </settings>
     </XmlExtensions.SettingsMenuDef>

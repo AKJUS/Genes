@@ -13,25 +13,27 @@
 
 # [RCP] Genes
 ![](About/Preview.png)\
-[![GPLv3][badge-license]](https://www.gnu.org/licenses/gpl-3.0) ![Supports Biotech][badge-dlc-biotech]
+[![GPLv3][badge-license]](https://www.gnu.org/licenses/gpl-3.0)![Supports Biotech][badge-dlc-biotech]
 
 > [!IMPORTANT]
 > Requires [RimWorld Biotech](https://store.steampowered.com/app/1826140/RimWorld__Biotech/).\
 > Requires [XML Extensions](https://steamcommunity.com/sharedfiles/filedetails/?id=2574315206).\
 > Integrated with [EBSG Framework](https://steamcommunity.com/sharedfiles/filedetails/?id=3112549163) (optional).
 
-Skill frenzies added by submodules like [Dirtmole](https://github.com/RimCorePlus/Genes-Dirtmole) have a mild incompatibility with Enhanced Beliefs, which spams harmless red errors when joy is disabled for a human pawn.
+## Additions
+### Hair Color Genes
+This mod adds 63 hair colors from the RimWorld color palette. These can be disabled in the settings.
 
-## Changes
-All changes are disabled by default.
+![](About/hair_colors.png)
 
-### Remove vanilla xenotypes
-All xenotypes except for sanguophage can be removed from pawn generation in a non-destructive way by removing them from every xenotypeChances list and setting factionlessGenerationWeight to 0. They can still be created by the character at game start and selected in the xenotype menu. Dirtmoles, genies, highmates, and hussars can be toggled off on an existing save. Removing impids, neanderthals, pigskins, wasters, and yttakin from an existing save is not advised if their factions are present.
+## Options
+### Remove Vanilla Xenotypes
+Vanilla xenotypes (excl. sanguophage) can be removed from pawn generation by removing them from every xenotypeChances list and setting factionlessGenerationWeight to 0. They can still be created by the character at game start and selected in the xenotype menu. These settings should be enabled before world generation.
 
-Removing wasters will cause a harmless DefOf red error on startup.
+Dirtmoles, genies, highmates, and hussars can be toggled off on an existing save. Removing impids, neanderthals, pigskins, wasters, and yttakin from an existing save is not recommended if their factions are in the world. Removing wasters will always cause a harmless DefOf red error on startup.
 
-### Misc changes
-- Butchering Piggers Yields Pork
+### Misc Changes
+- Butchering Piggers Yields Pork (requires EBSG Framework)
 - Normal Body Piggers
 
 ## Legal

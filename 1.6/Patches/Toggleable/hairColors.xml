@@ -1,0 +1,30 @@
+<Patch>
+    <!-- Increase Colored Hair Commonality -->
+    <Operation Class="XmlExtensions.OptionalPatch">
+        <modId>RCP.Genes</modId>
+        <key>RCP_AnimeHair</key>
+        <defaultValue>false</defaultValue>
+        <caseTrue>
+            <Operation Class="PatchOperationRemove">
+                <xpath>//GeneDef[@ParentName="GeneHairColorBase"]/selectionWeight</xpath>
+            </Operation>
+            <Operation Class="PatchOperationAdd">
+                <xpath>//GeneDef[defName="Hair_DarkBlack" or defName="Hair_MidBlack" or defName="Hair_DarkReddish" or defName="Hair_DarkSaturatedReddish" or defName="Hair_DarkBrown" or defName="Hair_ReddishBrown" or defName="Hair_SandyBlonde" or defName="Hair_Blonde"]</xpath>
+                <value>
+                    <selectionWeight>5</selectionWeight>
+                </value>
+            </Operation>
+        </caseTrue>
+    </Operation>
+    <!-- Remove Hair -->
+    <Operation Class="XmlExtensions.OptionalPatch">
+        <modId>RCP.Genes</modId>
+        <key>RCP_RemoveAllHair</key>
+        <defaultValue>false</defaultValue>
+        <caseTrue>
+            <Operation Class="PatchOperationRemove">
+                <xpath>//GeneDef[@ParentName="RCP_HairColorBase" or @Name="RCP_HairColorBase"] | //GeneCategoryDef[defName="RCP_HairColor"]</xpath>
+            </Operation>
+        </caseTrue>
+    </Operation>
+</Patch>
