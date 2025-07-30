@@ -20,6 +20,12 @@
                                 <defaultValue>false</defaultValue>
                                 <tooltip>Adjusts the commonality of hair color genes so colors like teal are more common. With this mod's hair colors active, a total of 81 hair colors will be in the rotation. Realistic hair colors are still favored, but to a 5:1 ratio instead of the vanilla 20:1.</tooltip>
                             </li>
+                            <li MayRequire="nera.spawnthosegenes,oppey.eyegenes2" Class="XmlExtensions.Setting.Checkbox">
+                                <key>RCP_AnimeEyes</key>
+                                <label>Anime Eye Color Variety</label>
+                                <defaultValue>false</defaultValue>
+                                <tooltip>Changes the eye color pool from EyeGenes2 using SpawnThoseGenes in a similar fashion to Anime Hair Color Variety. Requires both to be installed.</tooltip>
+                            </li>
                             <li MayRequire="nera.spawnthosegenes" Class="XmlExtensions.Setting.Checkbox">
                                 <key>RCP_SpawnThoseGenesIntegration</key>
                                 <label>Better SpawnThoseGenes Integration For Vanilla Xenotypes</label>
