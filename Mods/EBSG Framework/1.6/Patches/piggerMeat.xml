@@ -1,6 +1,6 @@
 <Patch>
     <Operation Class="XmlExtensions.OptionalPatch">
-        <modId>RCP.Empire</modId>
+        <modId>RCP.Genes</modId>
         <key>RCPGenesPiggerMeat</key>
         <defaultValue>false</defaultValue>
         <caseTrue>
