@@ -21,5 +21,7 @@
 	<loadAfter>
 		<li>ebsg.framework</li>
 		<li>imranfish.xmlextensions</li>
+		<li>nera.spawnthosegenes</li>
+		<li>oppey.eyegenes2</li>
 	</loadAfter>
 </ModMetaData>
