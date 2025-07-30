@@ -1,76 +1,60 @@
-<Patch>
-    <Operation Class="PatchOperationConditional">
-        <xpath>//GeneDef[defName="RCP_MaleGene"]</xpath>
-        <nomatch Class="PatchOperationAdd">
-            <xpath>Defs</xpath>
-            <value>
-                <GeneDef>
-                    <defName>RCP_MaleGene</defName>
-                    <label>always male</label>
-                    <description>Carriers of this gene are always male.</description>
-                    <iconPath>UI/Icons/Genes/Gene_MaleOnly</iconPath>
-                    <displayCategory>Miscellaneous</displayCategory>
-                    <displayOrderInCategory>9998</displayOrderInCategory>
-                    <geneClass>EBSGFramework.HediffAdder</geneClass>
-                    <modExtensions>
-                        <li Class="EBSGFramework.EBSGExtension">
-                            <genderByAge>
-                                <Male />
-                            </genderByAge>
-                        </li>
-                    </modExtensions>
-                    <symbolPack>
-                        <prefixSymbols>
-                            <li>
-                                <symbol>masc</symbol>
-                                <symbol>andro</symbol>
-                            </li>
-                        </prefixSymbols>
-                    </symbolPack>
-                    <exclusionTags>
-                        <li>AG_Gender</li>
-                        <li>EBSGGenderChange</li>
-                        <li>Gender</li>
-                    </exclusionTags>
-                </GeneDef>
-            </value>
-        </nomatch>
-    </Operation>
-    <Operation Class="PatchOperationConditional">
-        <xpath>//GeneDef[defName="RCP_FemaleGene"]</xpath>
-        <nomatch Class="PatchOperationAdd">
-            <xpath>Defs</xpath>
-            <value>
-                <GeneDef>
-                    <defName>RCP_FemaleGene</defName>
-                    <label>always female</label>
-                    <description>Carriers of this gene are always female.</description>
-                    <iconPath>UI/Icons/Genes/Gene_FemaleOnly</iconPath>
-                    <displayCategory>Miscellaneous</displayCategory>
-                    <displayOrderInCategory>9999</displayOrderInCategory>
-                    <geneClass>EBSGFramework.HediffAdder</geneClass>
-                    <modExtensions>
-                        <li Class="EBSGFramework.EBSGExtension">
-                            <genderByAge>
-                                <Female />
-                            </genderByAge>
-                        </li>
-                    </modExtensions>
-                    <symbolPack>
-                        <prefixSymbols>
-                            <li>
-                                <symbol>fem</symbol>
-                                <symbol>gyno</symbol>
-                            </li>
-                        </prefixSymbols>
-                    </symbolPack>
-                    <exclusionTags>
-                        <li>AG_Gender</li>
-                        <li>EBSGGenderChange</li>
-                        <li>Gender</li>
-                    </exclusionTags>
-                </GeneDef>
-            </value>
-        </nomatch>
-    </Operation>
-</Patch>
+<Defs>
+    <GeneDef>
+        <defName>RCP_MaleGene</defName>
+        <label>always male</label>
+        <description>Carriers of this gene are always male.</description>
+        <iconPath>UI/Icons/Genes/Gene_MaleOnly</iconPath>
+        <displayCategory>Miscellaneous</displayCategory>
+        <displayOrderInCategory>9998</displayOrderInCategory>
+        <geneClass>EBSGFramework.HediffAdder</geneClass>
+        <modExtensions>
+            <li Class="EBSGFramework.EBSGExtension">
+                <genderByAge>
+                    <Male />
+                </genderByAge>
+            </li>
+        </modExtensions>
+        <symbolPack>
+            <prefixSymbols>
+                <li>
+                    <symbol>masc</symbol>
+                    <symbol>andro</symbol>
+                </li>
+            </prefixSymbols>
+        </symbolPack>
+        <exclusionTags>
+            <li>AG_Gender</li>
+            <li>EBSGGenderChange</li>
+            <li>Gender</li>
+        </exclusionTags>
+    </GeneDef>
+    <GeneDef>
+        <defName>RCP_FemaleGene</defName>
+        <label>always female</label>
+        <description>Carriers of this gene are always female.</description>
+        <iconPath>UI/Icons/Genes/Gene_FemaleOnly</iconPath>
+        <displayCategory>Miscellaneous</displayCategory>
+        <displayOrderInCategory>9999</displayOrderInCategory>
+        <geneClass>EBSGFramework.HediffAdder</geneClass>
+        <modExtensions>
+            <li Class="EBSGFramework.EBSGExtension">
+                <genderByAge>
+                    <Female />
+                </genderByAge>
+            </li>
+        </modExtensions>
+        <symbolPack>
+            <prefixSymbols>
+                <li>
+                    <symbol>fem</symbol>
+                    <symbol>gyno</symbol>
+                </li>
+            </prefixSymbols>
+        </symbolPack>
+        <exclusionTags>
+            <li>AG_Gender</li>
+            <li>EBSGGenderChange</li>
+            <li>Gender</li>
+        </exclusionTags>
+    </GeneDef>
+</Defs>
