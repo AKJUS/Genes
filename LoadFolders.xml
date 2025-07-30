@@ -6,5 +6,6 @@
         <li IfModActive="Ludeon.Rimworld.Royalty">DLC/Royalty/1.6</li>
         <li IfModActive="ebsg.framework">Mods/EBSG Framework/1.6</li>
         <li IfModActive="jintuzilamian.gene.xenocosmetic">Mods/AFU Cosmetic Gene Expanded/1.6</li>
+        <li IfModActive="nera.spawnthosegenes">Mods/SpawnThoseGenes/1.6</li>
     </v1.6>
 </loadFolders>

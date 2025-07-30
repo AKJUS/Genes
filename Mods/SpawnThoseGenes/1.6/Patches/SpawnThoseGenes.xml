@@ -1,0 +1,79 @@
+<Patch>
+    <Operation Class="XmlExtensions.OptionalPatch">
+        <modId>RCP.Genes</modId>
+        <key>RCP_SpawnThoseGenesIntegration</key>
+        <defaultValue>false</defaultValue>
+        <caseTrue>
+            <Operation Class="PatchOperationRemove">
+                <xpath>//XenotypeDef[defName="Impid"]/genes/li[(starts-with(.,"Hair_") or starts-with(.,"Skin_"))] | //XenotypeDef[defName="Highmate"]/genes/li[starts-with(.,"Skin_")]</xpath>
+            </Operation>
+            <Operation Class="PatchOperationAdd">
+                <xpath>//SpawnThoseGenes.SpawnThoseGenesXenotypes[defName="Impid"]/Groups</xpath>
+                <value>
+                    <li>
+                        <Endogenes>
+                            <Skin_DeepRed>1</Skin_DeepRed>
+                            <Skin_Orange>1</Skin_Orange>
+                            <Skin_PaleYellow>1</Skin_PaleYellow>
+                        </Endogenes>
+                    </li>
+                    <li>
+                        <Endogenes>
+                            <Hair_LightOrange>1</Hair_LightOrange>
+                            <Hair_SandyBlonde>1</Hair_SandyBlonde>
+                        </Endogenes>
+                    </li>
+                </value>
+            </Operation>
+            <Operation Class="PatchOperationAdd">
+                <xpath>//SpawnThoseGenes.SpawnThoseGenesXenotypes[defName="Highmate"]/Groups</xpath>
+                <value>
+                    <li>
+                        <Endogenes>
+                            <Skin_Blue>1</Skin_Blue>
+                            <Skin_Purple>1</Skin_Purple>
+                            <Skin_SheerWhite>1</Skin_SheerWhite>
+                        </Endogenes>
+                    </li>
+                </value>
+            </Operation>
+        </caseTrue>
+    </Operation>
+    <Operation Class="XmlExtensions.OptionalPatch">
+        <modId>RCP.Genes</modId>
+        <key>RCP_AnimeHair</key>
+        <defaultValue>false</defaultValue>
+        <caseTrue>
+            <Operation Class="PatchOperationConditional">
+                <xpath>//GeneDef[defName="RCP_Black_Hair"]</xpath>
+                <match Class="PatchOperationSequence">
+                    <operations>
+                        <li Class="PatchOperationAdd">
+                            <xpath>//SpawnThoseGenes.SpawnThoseGenesXenotypes[defName="Impid"]/Groups/li[Endogenes/Hair_LightOrange]/Endogenes</xpath>
+                            <value>
+                                <RCP_Mustard_Hair>1</RCP_Mustard_Hair>
+                                <RCP_Orange_Hair>1</RCP_Orange_Hair>
+                                <RCP_Pastel_Orange_Hair>1</RCP_Pastel_Orange_Hair>
+                            </value>
+                        </li>
+                        <li Class="PatchOperationRemove">
+                            <xpath>//XenotypeDef[defName="Waster"]/genes/li[text()="Hair_Gray"]</xpath>
+                        </li>
+                        <li Class="PatchOperationAdd">
+                            <xpath>//SpawnThoseGenes.SpawnThoseGenesXenotypes[defName="Waster"]/Groups</xpath>
+                            <value>
+                                <li>
+                                    <Endogenes>
+                                        <Hair_Gray>1</Hair_Gray>
+                                        <RCP_Light_Gray_Hair>1</RCP_Light_Gray_Hair>
+                                        <RCP_White_Hair>1</RCP_White_Hair>
+                                    </Endogenes>
+                                </li>
+                            </value>
+                        </li>
+                    </operations>
+                </match>
+            </Operation>
+        </caseTrue>
+    </Operation>
+</Patch>

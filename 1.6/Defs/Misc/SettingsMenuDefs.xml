@@ -21,6 +21,12 @@
                                 <tooltip>Adjusts the commonality of hair color genes so colors like teal are more common. With this mod's hair colors active, a total of 81 hair colors will be in the rotation. Realistic hair colors are still favored, but to a 5:1 ratio instead of the vanilla 20:1.</tooltip>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>RCP_SpawnThoseGenesIntegration</key>
+                                <label>Better SpawnThoseGenes Integration For Vanilla Xenotypes</label>
+                                <defaultValue>false</defaultValue>
+                                <tooltip>Pawns will spawn with only one hair/skintone from their xenotype's genepool just like baseliners.</tooltip>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Checkbox">
                                 <key>RCP_RemoveAllHair</key>
                                 <label>Remove Extra Hair Colors</label>
                                 <defaultValue>false</defaultValue>
