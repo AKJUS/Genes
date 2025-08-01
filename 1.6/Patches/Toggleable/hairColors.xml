@@ -5,14 +5,73 @@
         <key>RCP_AnimeHair</key>
         <defaultValue>false</defaultValue>
         <caseTrue>
+            <!-- Remove selectionWeight from any hair that inherits GeneHairColorBase -->
             <Operation Class="PatchOperationRemove">
                 <xpath>//GeneDef[@ParentName="GeneHairColorBase"]/selectionWeight</xpath>
             </Operation>
+            <!-- Tier 1 (common) -->
             <Operation Class="PatchOperationAdd">
-                <xpath>//GeneDef[defName="Hair_DarkBlack" or defName="Hair_MidBlack" or defName="Hair_DarkReddish" or defName="Hair_DarkSaturatedReddish" or defName="Hair_DarkBrown" or defName="Hair_ReddishBrown" or defName="Hair_SandyBlonde" or defName="Hair_Blonde"]</xpath>
+                <xpath>//GeneDef[defName="Hair_DarkBlack" or defName="Hair_DarkBrown" or defName="Hair_DarkReddish" or defName="Hair_DarkSaturatedReddish" or defName="Hair_InkBlack" or defName="Hair_MidBlack" or defName="Hair_ReddishBrown"]</xpath>
                 <value>
                     <selectionWeight>5</selectionWeight>
                 </value>
+            </Operation>
+            <!-- Tier 2 (less common) -->
+            <Operation Class="PatchOperationAdd">
+                <xpath>//GeneDef[defName="Hair_Blonde" or defName="Hair_LightOrange" or defName="Hair_SandyBlonde"]</xpath>
+                <value>
+                    <selectionWeight>4.5</selectionWeight>
+                </value>
+            </Operation>
+            <!-- Tier 3 (uncommon) -->
+            <Operation Class="PatchOperationAdd">
+                <xpath>//GeneDef[defName="Hair_BrightRed"]</xpath>
+                <value>
+                    <selectionWeight>1</selectionWeight>
+                </value>
+            </Operation>
+            <!-- Tier 4 (rare) -->
+            <Operation Class="PatchOperationAdd">
+                <xpath>//GeneDef[defName="Hair_LightBlue" or defName="Hair_LightGreen" or defName="Hair_LightPurple" or defName="Hair_LightTeal" or defName="Hair_Pink" or defName="Hair_SnowWhite"]</xpath>
+                <value>
+                    <selectionWeight>0.5</selectionWeight>
+                </value>
+            </Operation>
+            <!-- Add selectionWeight to RCP hairs -->
+            <Operation Class="PatchOperationConditional">
+                <xpath>//GeneDef[defName="RCP_Black_Hair"]</xpath>
+                <match Class="PatchOperationSequence">
+                    <operations>
+                        <!-- Tier 1 (common) -->
+                        <li Class="PatchOperationAdd">
+                            <xpath>//GeneDef[defName="RCP_Black_Hair" or defName="RCP_Burnt_Umber_Hair" or defName="RCP_Dark_Brown_Hair" or defName="RCP_Dark_Grey_Hair" or defName="RCP_Dirt_Brown_Hair" or defName="RCP_Faded_Brown_Hair" or defName="RCP_Light_Brown_Hair" or defName="RCP_Slate_Hair" or defName="RCP_Subtle_Brown_Hair" or defName="RCP_Wood_Brown_Hair"]</xpath>
+                            <value>
+                                <selectionWeight>5</selectionWeight>
+                            </value>
+                        </li>
+                        <!-- Tier 2 (less common) -->
+                        <li Class="PatchOperationAdd">
+                            <xpath>//GeneDef[defName="RCP_Orange_Hair"]</xpath>
+                            <value>
+                                <selectionWeight>4.5</selectionWeight>
+                            </value>
+                        </li>
+                        <!-- Tier 3 (uncommon) -->
+                        <li Class="PatchOperationAdd">
+                            <xpath>//GeneDef[defName="RCP_Auburn_Hair" or defName="RCP_Blue_Hair" or defName="RCP_Bright_Moss_Hair" or defName="RCP_Burgundy_Hair" or defName="RCP_Dark_Mauve_Hair" or defName="RCP_Dark_Olive_Hair" or defName="RCP_Deep_Purple_Hair" or defName="RCP_Dusk_Hair" or defName="RCP_Forest_Green_Hair" or defName="RCP_Grape_Hair" or defName="RCP_Green_Hair" or defName="RCP_Ice_Blue_Hair" or defName="RCP_Indigo_Hair" or defName="RCP_Light_Indigo_Hair" or defName="RCP_Magenta_Hair" or defName="RCP_Marine_Hair" or defName="RCP_Marsh_Green_Hair" or defName="RCP_Moss_Hair" or defName="RCP_Muted_Purple_Hair" or defName="RCP_Pastel_Blue_Hair" or defName="RCP_Pastel_Green_Hair" or defName="RCP_Pastel_Orange_Hair" or defName="RCP_Pastel_Pink_Hair" or defName="RCP_Pastel_Red_Hair" or defName="RCP_Pastel_Yellow_Hair" or defName="RCP_Pine_Green_Hair" or defName="RCP_Plum_Hair" or defName="RCP_Purple_Hair" or defName="RCP_Red_Hair" or defName="RCP_Sage_Hair" or defName="RCP_Sky_Blue_Hair" or defName="RCP_Subtle_Blue_Hair" or defName="RCP_Subtle_Magenta_Hair" or defName="RCP_Subtle_Purple_Hair" or defName="RCP_Subtle_Viridian_Hair" or defName="RCP_Swamp_Green_Hair" or defName="RCP_Teal_Hair" or defName="RCP_Viridian_Hair"]</xpath>
+                            <value>
+                                <selectionWeight>1</selectionWeight>
+                            </value>
+                        </li>
+                        <!-- Tier 4 (rare) -->
+                        <li Class="PatchOperationAdd">
+                            <xpath>//GeneDef[defName="RCP_Faded_Green_Hair" or defName="RCP_Muddy_Green_Hair" or defName="RCP_Olive_Hair" or defName="RCP_Pale_Lime_Hair" or defName="RCP_Scarlet_Hair" or defName="RCP_Subtle_Red_Hair"]</xpath>
+                            <value>
+                                <selectionWeight>0.5</selectionWeight>
+                            </value>
+                        </li>
+                    </operations>
+                </match>
             </Operation>
         </caseTrue>
     </Operation>
