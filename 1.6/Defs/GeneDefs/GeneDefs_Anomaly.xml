@@ -1,0 +1,40 @@
+<Defs>
+    <GeneCategoryDef MayRequire="Ludeon.RimWorld.Anomaly">
+        <defName>RCP_Anomaly</defName>
+        <label>anomalous</label>
+        <displayPriorityInXenotype>271</displayPriorityInXenotype>
+    </GeneCategoryDef>
+    <GeneDef Name="RCP_AnomalousGeneBase" Abstract="True">
+        <displayCategory>RCP_Anomaly</displayCategory>
+    </GeneDef>
+    <GeneDef MayRequire="Ludeon.RimWorld.Anomaly" ParentName="RCP_AnomalousGeneBase">
+        <defName>RCP_MetalhorrorMutagen</defName>
+        <label>metalhorror mutagen</label>
+        <labelShortAdj>metalhorror</labelShortAdj>
+        <description>Carriers of this gene have the metalhorror mutagen. They are comfortable living in extreme temperatures and impervious to most types of damage, but move very slowly.</description>
+        <iconPath>Things/Pawn/Metalhorror/Metalhorror_Mature_south</iconPath>
+        <displayOrderInCategory>30</displayOrderInCategory>
+        <statFactors>
+            <IncomingDamageFactor>0.5</IncomingDamageFactor>
+        </statFactors>
+        <damageFactors>
+            <Flame>2</Flame>
+            <Burn>2</Burn>
+        </damageFactors>
+        <statOffsets>
+            <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+            <ComfyTemperatureMin>-58</ComfyTemperatureMin>
+            <ComfyTemperatureMax>112</ComfyTemperatureMax>
+            <MoveSpeed>-0.4</MoveSpeed>
+        </statOffsets>
+        <biostatMet>-2</biostatMet>
+        <symbolPack>
+            <prefixSymbols>
+                <li>
+                    <symbol>metal</symbol>
+                </li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+</Defs>
