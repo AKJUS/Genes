@@ -1,7 +1,7 @@
 <Patch>
     <Operation Class="XmlExtensions.OptionalPatch">
         <modId>RCP.Genes</modId>
-        <key>RCPGenesPiggerMeat</key>
+        <key>RCP_PiggerMeat</key>
         <defaultValue>false</defaultValue>
         <caseTrue>
             <Operation Class="PatchOperationAdd">

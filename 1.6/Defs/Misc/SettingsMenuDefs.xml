@@ -18,7 +18,7 @@
                                 <key>RCP_AnimeHair</key>
                                 <label>Anime Hair Color Variety</label>
                                 <defaultValue>false</defaultValue>
-                                <tooltip>Adjusts the commonality of hair color genes so colors like teal are more common. With this mod's hair colors active, a total of 81 hair colors will be in the rotation. Realistic hair colors are still favored, but to a 5:1 ratio instead of the vanilla 20:1.</tooltip>
+                                <tooltip>Adjusts the commonality of hair color genes so colors like teal are more common. With this mod's hair colors active, more vibrant hair colors will be in the rotation. Realistic hair colors are still favored but to a much lower degree than vanilla.</tooltip>
                             </li>
                             <li MayRequire="nera.spawnthosegenes,oppey.eyegenes2" Class="XmlExtensions.Setting.Checkbox">
                                 <key>RCP_AnimeEyes</key>
@@ -54,19 +54,19 @@
                                 <text>Highmates</text>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>reworkHighmate</key>
+                                <key>RCP_ReworkHighmate</key>
                                 <label>Highmates Are Capable of Violence</label>
                                 <defaultValue>false</defaultValue>
                                 <tooltip>Removes the violence disabled gene and replaced it with dead calm, terrible melee, terrible shooting, and weak melee.</tooltip>
                             </li>
                             <li MayRequire="jintuzilamian.gene.xenocosmetic" Class="XmlExtensions.Setting.Checkbox">
-                                <key>lovelyHighmates</key>
+                                <key>RCP_LovelyHighmates</key>
                                 <label>Lovely Feline Highmates</label>
                                 <defaultValue>false</defaultValue>
                                 <tooltip>Adds the lovely cat ears and tail genes from AFU Cosmetic Gene Expanded to highmates.</tooltip>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>highmateBody</key>
+                                <key>RCP_HighmateBody</key>
                                 <label>Standard Body Highmates</label>
                                 <defaultValue>false</defaultValue>
                                 <tooltip>Removes the thin body gene from highmates so they only generate with standard bodies.</tooltip>
@@ -76,13 +76,13 @@
                                 <text>Piggers</text>
                             </li>
                             <li MayRequire="ebsg.framework" Class="XmlExtensions.Setting.Checkbox">
-                                <key>RCPGenesPiggerMeat</key>
+                                <key>RCP_PiggerMeat</key>
                                 <label>Butchering Piggers Yields Pork</label>
                                 <defaultValue>false</defaultValue>
                                 <tooltip>Requires EBSG Framework. This option is only available with EBSG Framework installed.</tooltip>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>piggerBody</key>
+                                <key>RCP_PiggerBody</key>
                                 <label>Standard Body Piggers</label>
                                 <defaultValue>false</defaultValue>
                                 <tooltip>Removes the forced fat and hulk bodies from Pigskins and replaces them with standard bodies.</tooltip>
@@ -99,55 +99,55 @@
                             </li>
                             <li Class="XmlExtensions.Setting.Gap" />
                             <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>removeDirtmole</key>
+                                <key>RCP_RemoveDirtmole</key>
                                 <label>Remove Dirtmole From New Pawn Generation</label>
                                 <defaultValue>false</defaultValue>
                                 <tooltip>Prevents dirtmole pawns from being created by the game. Doesn't remove them completely, so they can still be selected as starting pawns or edited in the xenotype editor.</tooltip>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>removeGenie</key>
+                                <key>RCP_RemoveGenie</key>
                                 <label>Remove Genie From New Pawn Generation</label>
                                 <defaultValue>false</defaultValue>
                                 <tooltip>Prevents genie pawns from being created by the game. Doesn't remove them completely, so they can still be selected as starting pawns or edited in the xenotype editor.</tooltip>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>removeHighmate</key>
+                                <key>RCP_RemoveHighmate</key>
                                 <label>Remove Highmate From New Pawn Generation</label>
                                 <defaultValue>false</defaultValue>
                                 <tooltip>Prevents highmate pawns from being created by the game. Doesn't remove them completely, so they can still be selected as starting pawns or edited in the xenotype editor.</tooltip>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>removeHussar</key>
+                                <key>RCP_RemoveHussar</key>
                                 <label>Remove Hussar From New Pawn Generation</label>
                                 <defaultValue>false</defaultValue>
                                 <tooltip>Prevents hussar pawns from being created by the game. Doesn't remove them completely, so they can still be selected as starting pawns or edited in the xenotype editor.</tooltip>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>removeImpid</key>
+                                <key>RCP_RemoveImpid</key>
                                 <label>Remove Impid Faction and Pawns</label>
                                 <defaultValue>false</defaultValue>
                                 <tooltip>Prevents impid pawns from being created by the game. Doesn't remove them completely, so they can still be selected as starting pawns or edited in the xenotype editor. Also removes their faction.</tooltip>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>removeNeanderthal</key>
+                                <key>RCP_RemoveNeanderthal</key>
                                 <label>Remove Neanderthal Faction and Pawns</label>
                                 <defaultValue>false</defaultValue>
                                 <tooltip>Prevents neanderthal pawns from being created by the game. Doesn't remove them completely, so they can still be selected as starting pawns or edited in the xenotype editor. Also removes their faction.</tooltip>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>removePigskin</key>
+                                <key>RCP_RemovePigskin</key>
                                 <label>Remove Pigskin Faction and Pawns</label>
                                 <defaultValue>false</defaultValue>
                                 <tooltip>Prevents piggers from being created by the game. Doesn't remove them completely, so they can still be selected as starting pawns or edited in the xenotype editor. Also removes their faction.</tooltip>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>removeWaster</key>
+                                <key>RCP_RemoveWaster</key>
                                 <label>Remove Waster Faction and Pawns</label>
                                 <defaultValue>false</defaultValue>
-                                <tooltip>Prevents wasters from being created by the game. Doesn't remove them completely, so they can still be selected as starting pawns or edited in the xenotype editor. Also removes their faction.</tooltip>
+                                <tooltip>Prevents wasters from being created by the game. Doesn't remove them completely, so they can still be selected as starting pawns or edited in the xenotype editor. Also removes their faction.\n\nHeads up! This will create a harmless red error. You can safely ignore it.</tooltip>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>removeYttakin</key>
+                                <key>RCP_RemoveYttakin</key>
                                 <label>Remove Yttakin Faction and Pawns</label>
                                 <defaultValue>false</defaultValue>
                                 <tooltip>Prevents yttakin pawns from being created by the game. Doesn't remove them completely, so they can still be selected as starting pawns or edited in the xenotype editor. Also removes their faction.</tooltip>

@@ -1,11 +1,11 @@
 <Patch>
 	<Operation Class="XmlExtensions.OptionalPatch">
 		<modId>RCP.Genes</modId>
-		<key>removePigskin</key>
+		<key>RCP_RemovePigskin</key>
 		<defaultValue>false</defaultValue>
 		<caseTrue>
 			<Operation Class="PatchOperationRemove">
-				<xpath>//FactionDef[defName="OutlanderRoughPig"] | //PawnKindDef[defaultFactionType/text()="OutlanderRoughPig"] | //XenotypeDef/doubleXenotypeChances/Pigskin | //xenotypeSet/xenotypeChances/Pigskin</xpath>
+				<xpath>//FactionDef[defName="OutlanderRoughPig"] | //PawnKindDef[defaultFactionDef/text()="OutlanderRoughPig"] | //XenotypeDef/doubleXenotypeChances/Pigskin | //xenotypeSet/xenotypeChances/Pigskin</xpath>
 			</Operation>
 			<Operation Class="PatchOperationAdd">
 				<xpath>//XenotypeDef[defName="Pigskin"]</xpath>
@@ -17,7 +17,7 @@
 	</Operation>
 	<Operation Class="XmlExtensions.OptionalPatch">
 		<modId>RCP.Genes</modId>
-		<key>piggerBody</key>
+		<key>RCP_PiggerBody</key>
 		<defaultValue>false</defaultValue>
 		<caseTrue>
 			<Operation Class="PatchOperationRemove">

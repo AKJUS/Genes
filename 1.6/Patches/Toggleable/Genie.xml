@@ -1,7 +1,7 @@
 <Patch>
 	<Operation Class="XmlExtensions.OptionalPatch">
 		<modId>RCP.Genes</modId>
-		<key>removeGenie</key>
+		<key>RCP_RemoveGenie</key>
 		<defaultValue>false</defaultValue>
 		<caseTrue>
 			<Operation Class="PatchOperationRemove">

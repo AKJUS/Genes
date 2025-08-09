@@ -11,28 +11,49 @@
 > Requires [RimWorld Biotech](https://store.steampowered.com/app/1826140/RimWorld__Biotech/).\
 > Requires [XML Extensions](https://steamcommunity.com/sharedfiles/filedetails/?id=2574315206).\
 > Integrated with [AFU Cosmetic Gene Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2880942803) (optional).\
-> Integrated with [EBSG Framework](https://steamcommunity.com/sharedfiles/filedetails/?id=3112549163) (optional).
+> Integrated with [EBSG Framework](https://steamcommunity.com/sharedfiles/filedetails/?id=3112549163) (optional).\
+> Integrated with [EyeGenes2](https://steamcommunity.com/sharedfiles/filedetails/?id=2898151329) (optional).
 
 ## Additions
 ### Hair Color Genes
-This mod adds 63 hair colors from the RimWorld color palette. These can be disabled in the settings.
+This mod adds 63 hair colors from the RimWorld color palette. By default, they do not spawn on pawns. These can be disabled.
 
 ![](About/hair_colors.png)
 
-There's an option to make non-realistic hair colors more common as well. This setting can be enabled with or without the new hair colors enabled.
-
 ## Options
-### Remove Vanilla Xenotypes
-Vanilla xenotypes (excl. sanguophage) can be removed from pawn generation by removing them from every xenotypeChances list and setting factionlessGenerationWeight to 0. They can still be created by the character at game start and selected in the xenotype menu. These settings should be enabled before world generation.
+### Mod Settings
+- Anime Hair Color Variety
+> Adjusts the commonality of hair color genes so colors like teal are more common. With this mod's hair colors active, more vibrant hair colors will be in the rotation. Realistic hair colors are still favored but to a much lower degree than vanilla.
+- Anime Eye Color Variety (requires EyeGenes2 and SpawnThoseGenes)
+> Changes the eye color pool from EyeGenes2 using SpawnThoseGenes in a similar fashion to Anime Hair Color Variety. Requires both to be installed.
+- Better SpawnThoseGenes Integration For Vanilla Xenotypes (requires SpawnThoseGenes)
+> Pawns will spawn with only one hair/skintone from their xenotype's genepool just like baseliners.
+- Remove Extra Hair Colors
+> Removes all hair colors added by this mod.
 
-Dirtmoles, genies, highmates, and hussars can be toggled off on an existing save. Removing impids, neanderthals, pigskins, wasters, and yttakin from an existing save is not recommended if their factions are in the world. Removing wasters will always cause a harmless DefOf red error on startup.
-
-### Misc Changes
+### Tweaks
+#### Highmates
 - Highmates Are Capable of Violence
+> Removes the violence disabled gene and replaced it with dead calm, terrible melee, terrible shooting, and weak melee.
 - Lovely Feline Highmates (requires AFU Cosmetic Gene Expanded)
+> Adds the lovely cat ears and tail genes from AFU Cosmetic Gene Expanded to highmates.
 - Standard Body Highmates
+
+#### Piggers
 - Butchering Piggers Yields Pork (requires EBSG Framework)
 - Standard Body Piggers
+
+#### Remove Xenotypes
+> For xenotypes without their own faction, these settings remove the xenotypes from factions and pawnkinddefs (including from mods). The xenotype can still be selected during game start and in the xenotype editor, but should not show up in game (barring some extremely rare circumstances). For xenotypes with factions, it also removes the faction from the game entirely. Removing wasters will always throw a red error (Failed to find RimWorld.FactionDef named PirateWaster). This error can be ignored without issue.
+- Remove Dirtmole From New Pawn Generation
+- Remove Genie From New Pawn Generation
+- Remove Highmate From New Pawn Generation
+- Remove Hussar From New Pawn Generation
+- Remove Impid Faction and Pawns
+- Remove Neanderthal Faction and Pawns
+- Remove Pigskin Faction and Pawns
+- Remove Waster Faction and Pawns
+- Remove Yttakin Faction and Pawns
 
 ## Legal
 Portions of the materials used to create this mod are trademarks and/or copyrighted works of Ludeon Studios Inc. All rights reserved by Ludeon. This mod is not official and is not endorsed by Ludeon.

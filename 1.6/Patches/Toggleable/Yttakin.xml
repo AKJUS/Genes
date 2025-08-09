@@ -1,11 +1,11 @@
 <Patch>
 	<Operation Class="XmlExtensions.OptionalPatch">
 		<modId>RCP.Genes</modId>
-		<key>removeYttakin</key>
+		<key>RCP_RemoveYttakin</key>
 		<defaultValue>false</defaultValue>
 		<caseTrue>
 			<Operation Class="PatchOperationRemove">
-				<xpath>//FactionDef[defName="PirateYttakin"] | //PawnKindDef[defaultFactionType/text()="PirateYttakin"] | //XenotypeDef/doubleXenotypeChances/Yttakin | //xenotypeSet/xenotypeChances/Yttakin</xpath>
+				<xpath>//FactionDef[defName="PirateYttakin"] | //PawnKindDef[defaultFactionDef/text()="PirateYttakin"] | //XenotypeDef/doubleXenotypeChances/Yttakin | //xenotypeSet/xenotypeChances/Yttakin</xpath>
 			</Operation>
 			<Operation Class="PatchOperationAdd">
 				<xpath>//XenotypeDef[defName="Yttakin"]</xpath>

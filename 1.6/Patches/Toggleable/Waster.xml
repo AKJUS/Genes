@@ -1,11 +1,11 @@
 <Patch>
 	<Operation Class="XmlExtensions.OptionalPatch">
 		<modId>RCP.Genes</modId>
-		<key>removeWaster</key>
+		<key>RCP_RemoveWaster</key>
 		<defaultValue>false</defaultValue>
 		<caseTrue>
 			<Operation Class="PatchOperationRemove">
-				<xpath>//FactionDef[defName="PirateWaster"] | //PawnKindDef[defaultFactionType/text()="PirateWaster"] | //XenotypeDef/doubleXenotypeChances/Waster | //xenotypeSet/xenotypeChances/Waster | //siteFactions/li[text()="PirateWaster"]</xpath>
+				<xpath>//FactionDef[defName="PirateWaster"] | //PawnKindDef[defaultFactionDef/text()="PirateWaster"] | //XenotypeDef/doubleXenotypeChances/Waster | //xenotypeSet/xenotypeChances/Waster | //siteFactions/li[text()="PirateWaster"]</xpath>
 			</Operation>
 			<Operation Class="PatchOperationAdd">
 				<xpath>//XenotypeDef[defName="Waster"]</xpath>

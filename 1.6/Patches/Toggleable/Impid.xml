@@ -1,11 +1,11 @@
 <Patch>
 	<Operation Class="XmlExtensions.OptionalPatch">
 		<modId>RCP.Genes</modId>
-		<key>removeImpid</key>
+		<key>RCP_RemoveImpid</key>
 		<defaultValue>false</defaultValue>
 		<caseTrue>
 			<Operation Class="PatchOperationRemove">
-				<xpath>//FactionDef[defName="TribeSavageImpid"] | //PawnKindDef[defaultFactionType/text()="TribeSavageImpid"] | //XenotypeDef/doubleXenotypeChances/Impid | //xenotypeSet/xenotypeChances/Impid</xpath>
+				<xpath>//FactionDef[defName="TribeSavageImpid"] | //PawnKindDef[defaultFactionDef/text()="TribeSavageImpid"] | //XenotypeDef/doubleXenotypeChances/Impid | //xenotypeSet/xenotypeChances/Impid</xpath>
 			</Operation>
 			<Operation Class="PatchOperationAdd">
 				<xpath>//XenotypeDef[defName="Impid"]</xpath>
