@@ -45,15 +45,15 @@
         <defaultValue>false</defaultValue>
         <caseTrue>
             <Operation Class="PatchOperationConditional">
-                <xpath>//GeneDef[defName="RCP_Black_Hair"]</xpath>
+                <xpath>//GeneDef[defName="RCP_HairBlack"]</xpath>
                 <match Class="PatchOperationSequence">
                     <operations>
                         <li Class="PatchOperationAdd">
                             <xpath>//SpawnThoseGenes.SpawnThoseGenesXenotypes[defName="Impid"]/Groups/li[Endogenes/Hair_LightOrange]/Endogenes</xpath>
                             <value>
-                                <RCP_Mustard_Hair>1</RCP_Mustard_Hair>
-                                <RCP_Orange_Hair>1</RCP_Orange_Hair>
-                                <RCP_Pastel_Orange_Hair>1</RCP_Pastel_Orange_Hair>
+                                <RCP_HairMustard>1</RCP_HairMustard>
+                                <RCP_HairOrange>1</RCP_HairOrange>
+                                <RCP_HairOrangePastel>1</RCP_HairOrangePastel>
                             </value>
                         </li>
                         <li Class="PatchOperationRemove">
@@ -65,8 +65,8 @@
                                 <li>
                                     <Endogenes>
                                         <Hair_Gray>1</Hair_Gray>
-                                        <RCP_Light_Gray_Hair>1</RCP_Light_Gray_Hair>
-                                        <RCP_White_Hair>1</RCP_White_Hair>
+                                        <RCP_HairGrayLight>1</RCP_HairGrayLight>
+                                        <RCP_HairWhite>1</RCP_HairWhite>
                                     </Endogenes>
                                 </li>
                             </value>
