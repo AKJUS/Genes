@@ -24,4 +24,14 @@
 		<li>nera.spawnthosegenes</li>
 		<li>oppey.eyegenes2</li>
 	</loadAfter>
+	<loadBefore>
+		<li>RCP.Genes.Bloodfeeders</li>
+		<li>RCP.Genes.Dirtmole</li>
+		<li>RCP.Genes.Elves</li>
+		<li>RCP.Genes.Enchanters</li>
+		<li>RCP.Genes.Foxkin</li>
+		<li>RCP.Genes.Impid</li>
+		<li>RCP.Genes.Voidborn</li>
+		<li>RCP.Genes.Waster</li>
+	</loadBefore>
 </ModMetaData>
